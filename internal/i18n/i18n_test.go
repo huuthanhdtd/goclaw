@@ -233,6 +233,11 @@ func TestNormalizeLocale(t *testing.T) {
 			wantNormal: LocaleVI,
 		},
 		{
+			name:       "ja-JP prefix stripped to ja",
+			locale:     "ja-JP",
+			wantNormal: LocaleJA,
+		},
+		{
 			name:       "zh-CN prefix stripped to zh",
 			locale:     "zh-CN",
 			wantNormal: LocaleZH,

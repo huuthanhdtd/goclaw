@@ -69,7 +69,7 @@ func Normalize(locale string) string {
 	if IsSupported(locale) {
 		return locale
 	}
-	// Handle common prefixes: "en-US" → "en", "vi-VN" → "vi", "ja-CN" → "ja"
+	// Handle common prefixes: "en-US" → "en", "vi-VN" → "vi", "ja-JP" → "ja"
 	if len(locale) >= 2 {
 		prefix := locale[:2]
 		if IsSupported(prefix) {
