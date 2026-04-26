@@ -1,265 +1,265 @@
 {
-  "title": "Text-to-Speech",
-  "description": "Configure TTS providers and auto-apply settings",
-  "save": "Save",
-  "saving": "Saving...",
-  "saveChanges": "Save Changes",
+  "title": "テキスト読み上げ",
+  "description": "TTSプロバイダーと自動適用設定の構成",
+  "save": "保存",
+  "saving": "保存中...",
+  "saveChanges": "変更を保存",
   "status": {
-    "title": "Status",
-    "configured": "Configured",
-    "disabled": "Disabled",
-    "noProvider": "No TTS provider configured",
-    "activeProvider": "Primary provider: {{provider}}, Auto: {{auto}}"
+    "title": "ステータス",
+    "configured": "構成済み",
+    "disabled": "無効",
+    "noProvider": "TTSプロバイダーが構成されていません",
+    "activeProvider": "プライマリプロバイダー: {{provider}}, 自動: {{auto}}"
   },
   "general": {
-    "title": "General Settings",
-    "primaryProvider": "Primary Provider",
-    "autoApplyMode": "Auto-Apply Mode",
-    "replyMode": "Reply Mode",
-    "maxTextLength": "Max Text Length",
-    "timeout": "Timeout (ms)"
+    "title": "一般設定",
+    "primaryProvider": "プライマリプロバイダー",
+    "autoApplyMode": "自動適用モード",
+    "replyMode": "返信モード",
+    "maxTextLength": "最大テキスト長",
+    "timeout": "タイムアウト (ms)"
   },
   "providers": {
-    "none": "None (Disabled)",
+    "none": "なし（無効）",
     "openai": "OpenAI",
     "elevenlabs": "ElevenLabs",
-    "edge": "Edge (Free)",
+    "edge": "Edge（無料）",
     "minimax": "MiniMax",
     "gemini": "Google Gemini"
   },
   "autoModes": {
-    "off": "Off",
-    "offDesc": "Agent can use TTS tool manually",
-    "always": "Always",
-    "alwaysDesc": "All replies get audio",
-    "inbound": "Inbound",
-    "inboundDesc": "Only when user sends voice/audio",
-    "tagged": "Tagged",
-    "taggedDesc": "Only when reply contains [[tts]] tag"
+    "off": "オフ",
+    "offDesc": "エージェントはTTSツールを手動で使用できます",
+    "always": "常に",
+    "alwaysDesc": "すべての返信が音声になります",
+    "inbound": "受信時",
+    "inboundDesc": "ユーザーが音声/オーディオを送信したときのみ",
+    "tagged": "タグ付き",
+    "taggedDesc": "[[tts]]タグを含む返信時のみ"
   },
   "replyModes": {
-    "final": "Final only",
-    "finalDesc": "Only final replies",
-    "all": "All",
-    "allDesc": "All replies including tool/block"
+    "final": "最終のみ",
+    "finalDesc": "最終返信のみ",
+    "all": "すべて",
+    "allDesc": "ツールやブロックを含むすべての返信"
   },
-  "providerSettings": "{{provider}} Settings",
+  "providerSettings": "{{provider}} 設定",
   "openai": {
-    "apiKey": "API Key",
-    "apiBase": "API Base URL",
-    "model": "Model",
-    "voice": "Voice",
+    "apiKey": "APIキー",
+    "apiBase": "APIベースURL",
+    "model": "モデル",
+    "voice": "音声",
     "speed": {
-      "label": "Speed",
-      "help": "Speech speed multiplier — 0.25 = slowest, 4.0 = fastest."
+      "label": "速度",
+      "help": "音声速度の倍率 — 0.25 = 最遅, 4.0 = 最速"
     },
     "responseFormat": {
-      "label": "Output Format",
-      "help": "Audio encoding returned by the API (mp3, opus, aac, flac, wav, pcm)."
+      "label": "出力形式",
+      "help": "APIが返す音声のエンコード形式 (mp3, opus, aac, flac, wav, pcm)"
     },
     "instructions": {
-      "label": "Instructions",
-      "help": "System-level style prompt — only supported on gpt-4o-mini-tts model."
+      "label": "指示",
+      "help": "システムレベルのスタイルプロンプト — gpt-4o-mini-ttsモデルのみ対応"
     }
   },
   "elevenlabs": {
-    "apiKey": "API Key",
-    "baseUrl": "Base URL",
-    "voiceId": "Voice ID",
-    "modelId": "Model ID",
+    "apiKey": "APIキー",
+    "baseUrl": "ベースURL",
+    "voiceId": "音声ID",
+    "modelId": "モデルID",
     "voiceSettings": {
       "stability": {
-        "label": "Stability",
-        "help": "0 = more expressive variation, 1 = more consistent and stable."
+        "label": "安定性",
+        "help": "0 = 表現豊か, 1 = 安定"
       },
       "similarityBoost": {
-        "label": "Similarity Boost",
-        "help": "How closely output matches the original voice clone (0 = creative, 1 = similar)."
+        "label": "類似度ブースト",
+        "help": "出力音声の元声との類似度 (0 = 創造的, 1 = 類似)"
       },
       "style": {
-        "label": "Style Exaggeration",
-        "help": "Amplifies voice style. 0 = none; higher values add more expressiveness."
+        "label": "スタイル強調",
+        "help": "声の表現を強調。0 = なし, 高い値 = 表現豊か"
       },
       "useSpeakerBoost": {
-        "label": "Speaker Boost",
-        "help": "Enhances voice clarity and target speaker similarity."
+        "label": "スピーカーブースト",
+        "help": "音声の明瞭度と話者類似度を向上"
       },
       "speed": {
-        "label": "Speed",
-        "help": "Speech speed — range 0.7 (slow) to 1.2 (fast)."
+        "label": "速度",
+        "help": "音声速度 — 0.7（遅い）〜1.2（速い）"
       }
     },
     "applyTextNormalization": {
-      "label": "Text Normalization",
-      "help": "How numbers and abbreviations are expanded (auto, on, or off)."
+      "label": "テキスト正規化",
+      "help": "数字や略語の展開方法 (自動, 有効, 無効)"
     },
     "seed": {
-      "label": "Seed (Advanced)",
-      "help": "Set a fixed seed for reproducible output. 0 = random."
+      "label": "シード（高度）",
+      "help": "固定シードで再現性のある出力。0 = ランダム"
     },
     "optimizeStreamingLatency": {
-      "label": "Streaming Latency (Advanced)",
-      "help": "Latency optimization level: 0 = none, 4 = maximum."
+      "label": "ストリーミング遅延（高度）",
+      "help": "遅延最適化レベル: 0 = なし, 4 = 最大"
     },
     "languageCode": {
-      "label": "Language Code",
-      "help": "ISO 639-1 language hint, e.g. 'en' or 'vi'. Advanced."
+      "label": "言語コード",
+      "help": "ISO 639-1言語ヒント例: 'en', 'vi'. 高度設定"
     }
   },
   "edge": {
-    "voice": "Voice",
-    "speechRate": "Speech Rate",
-    "hint": "Edge TTS is free and requires no API key. Install with: pip install edge-tts",
+    "voice": "音声",
+    "speechRate": "速度",
+    "hint": "Edge TTSは無料でAPIキー不要。インストール: pip install edge-tts",
     "rate": {
-      "label": "Speech Rate",
-      "help": "Rate adjustment in percent. -50% = much slower, +100% = much faster."
+      "label": "速度",
+      "help": "速度調整（%）。-50% = 遅い, +100% = 速い"
     },
     "pitch": {
-      "label": "Pitch",
-      "help": "Pitch shift in Hz relative to neutral. Range: -50 Hz to +50 Hz."
+      "label": "ピッチ",
+      "help": "基準からのピッチ変化（Hz）。範囲 -50〜+50"
     },
     "volume": {
-      "label": "Volume",
-      "help": "Volume adjustment in percent. -50% = quieter, +100% = louder."
+      "label": "音量",
+      "help": "音量調整（%）。-50% = 小さい, +100% = 大きい"
     }
   },
   "minimax": {
-    "apiKey": "API Key",
-    "groupId": "Group ID *",
-    "groupIdPlaceholder": "Required for MiniMax",
-    "apiBase": "API Base",
-    "model": "Model",
-    "voiceId": "Voice ID",
+    "apiKey": "APIキー",
+    "groupId": "グループID *",
+    "groupIdPlaceholder": "MiniMaxに必須",
+    "apiBase": "APIベース",
+    "model": "モデル",
+    "voiceId": "音声ID",
     "speed": {
-      "label": "Speed",
-      "help": "Speech speed multiplier — 0.5 = slowest, 2.0 = fastest."
+      "label": "速度",
+      "help": "音声速度の倍率 — 0.5 = 最遅, 2.0 = 最速"
     },
     "vol": {
-      "label": "Volume",
-      "help": "Volume multiplier — 0.01 = near-silent, 10.0 = loudest."
+      "label": "音量",
+      "help": "音量倍率 — 0.01 = ほぼ無音, 10 = 最大"
     },
     "pitch": {
-      "label": "Pitch",
-      "help": "Pitch shift in semitones. -12 = one octave down, +12 = one octave up."
+      "label": "ピッチ",
+      "help": "ピッチ変化（半音）。-12 = 1オクターブ下, +12 = 1オクターブ上"
     },
     "emotion": {
-      "label": "Emotion",
-      "help": "Emotional tone applied to the synthesized voice."
+      "label": "感情",
+      "help": "音声に適用する感情トーン"
     },
     "textNormalization": {
-      "label": "Text Normalization",
-      "help": "Whether numbers and symbols are expanded before synthesis."
+      "label": "テキスト正規化",
+      "help": "合成前に数字や記号を展開するか"
     },
     "audio": {
       "format": {
-        "label": "Audio Format",
-        "help": "Output encoding: mp3, pcm, flac, or wav."
+        "label": "音声形式",
+        "help": "出力形式: mp3, pcm, flac, wav"
       },
       "sampleRate": {
-        "label": "Sample Rate",
-        "help": "Audio sample rate in Hz. Leave as Default for most use cases."
+        "label": "サンプルレート",
+        "help": "音声サンプルレート（Hz）。通常はデフォルトで良い"
       },
       "bitrate": {
-        "label": "Bitrate (MP3 only)",
-        "help": "MP3 bit rate in bps. Only applies when format is mp3."
+        "label": "ビットレート（MP3のみ）",
+        "help": "MP3ビットレート（bps）。MP3のみ適用"
       },
       "channel": {
-        "label": "Channels",
-        "help": "1 = mono (smaller file), 2 = stereo."
+        "label": "チャンネル",
+        "help": "1 = モノラル, 2 = ステレオ"
       }
     }
   },
   "gemini": {
-    "apiKey": "API Key",
-    "apiBase": "API Base URL",
-    "voice": "Voice",
-    "model": "Model",
-    "multiSpeaker": "Multi-Speaker",
-    "multiSpeakerHint": "Up to 2 speakers supported",
-    "audioTags": "Audio Tags",
-    "audioTagsHint": "Insert expressive tags like [laughs] directly in your text",
-    "speakerName": "Speaker Name",
-    "speakerVoice": "Speaker Voice",
-    "addSpeaker": "Add Speaker",
-    "removeSpeaker": "Remove",
-    "maxSpeakersReached": "Maximum 2 speakers reached",
-    "filterAll": "All",
-    "filterEmotion": "Emotion",
-    "filterPacing": "Pacing",
-    "filterEffect": "Effect",
-    "filterVoiceQuality": "Voice Quality",
-    "searchPlaceholder": "Search tags…",
-    "insertTag": "Insert",
+    "apiKey": "APIキー",
+    "apiBase": "APIベースURL",
+    "voice": "音声",
+    "model": "モデル",
+    "multiSpeaker": "マルチスピーカー",
+    "multiSpeakerHint": "最大2人の話者をサポート",
+    "audioTags": "オーディオタグ",
+    "audioTagsHint": "テキストに[laughs]などの表現タグを挿入",
+    "speakerName": "話者名",
+    "speakerVoice": "話者の音声",
+    "addSpeaker": "話者追加",
+    "removeSpeaker": "削除",
+    "maxSpeakersReached": "最大2人の話者に達しました",
+    "filterAll": "すべて",
+    "filterEmotion": "感情",
+    "filterPacing": "話速",
+    "filterEffect": "効果",
+    "filterVoiceQuality": "音質",
+    "searchPlaceholder": "タグを検索…",
+    "insertTag": "挿入",
     "multiSpeakerMode": {
-      "title": "Multi-Speaker Mode",
-      "addSpeaker": "Add speaker",
-      "speakerName": "Speaker name",
-      "speakerVoice": "Voice",
-      "removeSpeaker": "Remove",
-      "limitReached": "Maximum 2 speakers"
+      "title": "マルチスピーカーモード",
+      "addSpeaker": "話者追加",
+      "speakerName": "話者名",
+      "speakerVoice": "音声",
+      "removeSpeaker": "削除",
+      "limitReached": "最大2人の話者"
     },
     "audioTagsPanel": {
-      "title": "Audio Tags",
-      "search": "Search tags",
-      "categoryEmotion": "Emotion",
-      "categoryPacing": "Pacing",
-      "categoryEffect": "Effect",
-      "categoryVoiceQuality": "Voice quality",
-      "insertHint": "Click a tag to insert at caret"
+      "title": "オーディオタグ",
+      "search": "タグを検索",
+      "categoryEmotion": "感情",
+      "categoryPacing": "話速",
+      "categoryEffect": "効果",
+      "categoryVoiceQuality": "音質",
+      "insertHint": "タグをクリックしてキャレット位置に挿入"
     },
-    "previewBadge": "Preview"
-  },
-  "voice_label": "Voice",
-  "voice_placeholder": "Select a voice…",
-  "voice_picker": {
-    "requires_provider": "Configure TTS provider first",
-    "enter_voice_id": "Enter voice_id manually"
-  },
-  "voice_refresh": "Refresh",
-  "voice_preview": "Preview",
-  "voice_stop_preview": "Stop",
-  "voice_no_voices": "No voices available",
-  "voice_save_config_first": "Save API key first to load voices",
-  "voice_loading": "Loading voices…",
-  "voice_preview_error": "Preview failed — refreshing list",
-  "model_label": "Model",
-  "model_placeholder": "Default (tenant/system)",
-  "empty_state": {
-    "title": "TTS not configured",
-    "description": "Configure a TTS provider to enable voice for agents.",
-    "cta": "Configure TTS",
-    "non_owner_hint": "Contact the workspace owner to configure TTS."
-  },
-  "override": {
-    "label": "Override voice for this agent",
-    "inherits": "Inherits: {{provider}} · {{voice}} · {{model}}",
-    "params": {
-      "title": "Fine-tune"
+    "previewBadge": "プレビュー",
+    "voice_label": "音声",
+    "voice_placeholder": "音声を選択…",
+    "voice_picker": {
+      "requires_provider": "まずTTSプロバイダを設定してください",
+      "enter_voice_id": "voice_idを手動で入力"
+    },
+    "voice_refresh": "更新",
+    "voice_preview": "プレビュー",
+    "voice_stop_preview": "停止",
+    "voice_no_voices": "利用可能な音声がありません",
+    "voice_save_config_first": "音声を読み込むには先にAPIキーを保存してください",
+    "voice_loading": "音声を読み込み中…",
+    "voice_preview_error": "プレビューに失敗 — リストを更新中",
+    "model_label": "モデル",
+    "model_placeholder": "デフォルト (テナント/システム)",
+    "empty_state": {
+      "title": "TTSが未設定",
+      "description": "エージェントで音声を使用するにはTTSプロバイダを設定してください。",
+      "cta": "TTSを設定",
+      "non_owner_hint": "TTS設定はワークスペース所有者にお問い合わせください。"
+    },
+    "override": {
+      "label": "このエージェントの音声を上書き",
+      "inherits": "継承: {{provider}} · {{voice}} · {{model}}",
+      "params": {
+        "title": "微調整"
+      }
+    },
+    "test": {
+      "button": "音声をテスト",
+      "sample_text": "こんにちは、これは音声テストです。"
+    },
+    "testConnection": {
+      "label": "接続をテスト",
+      "testing": "テスト中…",
+      "success": "接続成功",
+      "failed": "接続失敗"
+    },
+    "playground": {
+      "title": "テストプレイグラウンド",
+      "inputLabel": "合成するテキスト",
+      "placeholder": "テキストを入力して聞く…",
+      "play": "再生",
+      "stop": "停止",
+      "synthesizing": "合成中…",
+      "playbackFailed": "再生に失敗しました",
+      "requiresProvider": "テスト再生を有効にするには上でプロバイダを選択してください。"
+    },
+    "advanced": {
+      "title": "高度設定",
+      "count": "{{count}} 件の高度設定",
+      "count_one": "{{count}} 件の高度設定"
     }
-  },
-  "test": {
-    "button": "Test this voice",
-    "sample_text": "Hello, this is a voice test."
-  },
-  "testConnection": {
-    "label": "Test connection",
-    "testing": "Testing…",
-    "success": "Connection successful",
-    "failed": "Connection failed"
-  },
-  "playground": {
-    "title": "Test Playground",
-    "inputLabel": "Text to synthesize",
-    "placeholder": "Enter text to hear…",
-    "play": "Play",
-    "stop": "Stop",
-    "synthesizing": "Synthesizing…",
-    "playbackFailed": "Playback failed",
-    "requiresProvider": "Select a provider above to enable test playback."
-  },
-  "advanced": {
-    "title": "Advanced settings",
-    "count": "{{count}} advanced settings",
-    "count_one": "{{count}} advanced setting"
   }
 }

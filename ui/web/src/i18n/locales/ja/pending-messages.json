@@ -1,50 +1,50 @@
 {
-  "title": "Pending Messages",
-  "description": "Buffered channel messages awaiting agent processing",
-  "emptyTitle": "No pending messages",
-  "emptyDescription": "No buffered message groups found. Messages appear here when channels buffer incoming messages before agent processing.",
+  "title": "保留メッセージ",
+  "description": "エージェント処理待ちのバッファ済みチャンネルメッセージ",
+  "emptyTitle": "保留メッセージはありません",
+  "emptyDescription": "バッファされたメッセージグループはありません。チャンネルからのメッセージは、エージェント処理の前にバッファされるとここに表示されます。",
   "howItWorks": {
-    "title": "How it works",
-    "step1": "Messages from channels (Telegram, Discord, etc.) are buffered here while the agent is busy or offline.",
-    "step2": "When the buffer reaches the threshold (default: 50 messages), auto-compaction kicks in — an LLM summarizes older messages, keeping only the 15 most recent.",
-    "step3": "On the agent's next turn, the compacted summary + recent messages are injected as context, so the agent catches up without being overwhelmed.",
-    "compactAction": "Compact — Manually trigger LLM summarization now. Useful when you want the agent to process a clean summary instead of raw message flood.",
-    "clearAction": "Clear — Permanently delete all buffered messages for a group. Use when messages are no longer relevant."
+    "title": "仕組み",
+    "step1": "チャンネル（Telegram、Discordなど）からのメッセージは、エージェントがビジーまたはオフラインの間ここにバッファされます。",
+    "step2": "バッファが閾値（デフォルト: 50メッセージ）に達すると、自動コンパクションが実行され、LLMが古いメッセージを要約し、最新15件のみを保持します。",
+    "step3": "エージェントの次のターンで、圧縮された要約 + 最新メッセージがコンテキストとして注入され、エージェントは大量の情報に圧倒されずに状況を把握できます。",
+    "compactAction": "圧縮 — LLMによる要約を手動で実行します。生のメッセージではなく整理された要約でエージェントに処理させたい場合に便利です。",
+    "clearAction": "クリア — グループ内のすべてのバッファメッセージを完全に削除します。不要になったメッセージの削除に使用します。"
   },
   "columns": {
-    "channel": "Channel",
-    "group": "Group",
-    "messages": "Messages",
-    "status": "Status",
-    "lastActivity": "Last Activity",
-    "actions": "Actions"
+    "channel": "チャンネル",
+    "group": "グループ",
+    "messages": "メッセージ数",
+    "status": "ステータス",
+    "lastActivity": "最終アクティビティ",
+    "actions": "操作"
   },
   "status": {
-    "compacted": "Compacted",
-    "raw": "Raw"
+    "compacted": "圧縮済み",
+    "raw": "生データ"
   },
-  "compact": "Compact",
-  "compacting": "Compacting…",
-  "clear": "Clear",
+  "compact": "圧縮",
+  "compacting": "圧縮中…",
+  "clear": "クリア",
   "confirmClear": {
-    "title": "Clear messages?",
-    "description": "This will permanently delete all messages in {{channel}} / {{key}}. This action cannot be undone.",
-    "cancel": "Cancel",
-    "confirm": "Clear"
+    "title": "メッセージを削除しますか？",
+    "description": "{{channel}} / {{key}} のすべてのメッセージが完全に削除されます。この操作は取り消せません。",
+    "cancel": "キャンセル",
+    "confirm": "削除"
   },
   "dialog": {
-    "title": "Messages — {{name}}",
-    "noMessages": "No messages found.",
-    "summary": "Summary"
+    "title": "メッセージ — {{name}}",
+    "noMessages": "メッセージが見つかりません。",
+    "summary": "要約"
   },
   "toast": {
-    "compacted": "Compaction complete",
-    "compactedSummarized": "Summarized to {{count}} messages",
-    "compactedDeleted": "All messages deleted (no LLM provider available)",
-    "compacting": "Compacting…",
-    "compactingDesc": "LLM summarization running in background. List will refresh automatically.",
-    "failedCompact": "Compaction failed",
-    "cleared": "Messages cleared",
-    "failedClear": "Failed to clear messages"
+    "compacted": "圧縮が完了しました",
+    "compactedSummarized": "{{count}}件のメッセージに要約されました",
+    "compactedDeleted": "LLMプロバイダーがないため全メッセージが削除されました",
+    "compacting": "圧縮中…",
+    "compactingDesc": "LLMによる要約処理をバックグラウンドで実行中です。リストは自動更新されます。",
+    "failedCompact": "圧縮に失敗しました",
+    "cleared": "メッセージを削除しました",
+    "failedClear": "メッセージの削除に失敗しました"
   }
 }

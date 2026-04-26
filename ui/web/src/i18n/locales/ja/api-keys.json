@@ -1,87 +1,87 @@
 {
-  "title": "API Keys",
-  "description": "Manage gateway API keys with fine-grained permissions.",
-  "addKey": "Create API Key",
-  "searchPlaceholder": "Search keys...",
-  "emptyTitle": "No API keys",
-  "emptyDescription": "Create your first API key to authenticate with the gateway.",
+  "title": "APIキー",
+  "description": "詳細な権限設定でゲートウェイAPIキーを管理します。",
+  "addKey": "APIキーを作成",
+  "searchPlaceholder": "キーを検索...",
+  "emptyTitle": "APIキーがありません",
+  "emptyDescription": "最初のAPIキーを作成してゲートウェイで認証を行いましょう。",
   "columns": {
-    "name": "Name",
-    "prefix": "Key",
-    "scopes": "Scopes",
-    "lastUsed": "Last Used",
-    "created": "Created",
-    "status": "Status",
-    "actions": "Actions"
+    "name": "名前",
+    "prefix": "キー",
+    "scopes": "スコープ",
+    "lastUsed": "最終使用",
+    "created": "作成日",
+    "status": "ステータス",
+    "actions": "操作"
   },
   "status": {
-    "active": "Active",
-    "revoked": "Revoked",
-    "expired": "Expired"
+    "active": "有効",
+    "revoked": "無効化済み",
+    "expired": "期限切れ"
   },
   "form": {
-    "title": "Create API Key",
-    "name": "Name",
-    "namePlaceholder": "e.g. ci-deploy, dashboard-readonly",
-    "scopes": "Scopes",
+    "title": "APIキー作成",
+    "name": "名前",
+    "namePlaceholder": "例: ci-deploy, dashboard-readonly",
+    "scopes": "スコープ",
     "scopeDescriptions": {
-      "operator.admin": "Full admin access",
-      "operator.read": "Read-only access",
-      "operator.write": "Read + write access",
-      "operator.approvals": "Manage exec approvals",
-      "operator.pairing": "Manage device pairing",
-      "operator.provision": "Provision new tenants"
+      "operator.admin": "管理者フルアクセス",
+      "operator.read": "読み取り専用アクセス",
+      "operator.write": "読み取り＋書き込みアクセス",
+      "operator.approvals": "実行承認の管理",
+      "operator.pairing": "デバイスペアリングの管理",
+      "operator.provision": "新規テナントのプロビジョニング"
     },
-    "tenant": "Tenant",
-    "tenantSystem": "System (all tenants)",
-    "expiry": "Expiry",
+    "tenant": "テナント",
+    "tenantSystem": "システム（すべてのテナント）",
+    "expiry": "有効期限",
     "expiryOptions": {
-      "never": "Never",
-      "7d": "7 days",
-      "30d": "30 days",
-      "90d": "90 days"
+      "never": "無期限",
+      "7d": "7日間",
+      "30d": "30日間",
+      "90d": "90日間"
     },
-    "cancel": "Cancel",
-    "create": "Create",
-    "creating": "Creating..."
+    "cancel": "キャンセル",
+    "create": "作成",
+    "creating": "作成中..."
   },
   "created": {
-    "title": "API Key Created",
-    "description": "Copy this key now — it won't be shown again.",
-    "copied": "Copied!",
-    "copy": "Copy to clipboard",
-    "done": "Done"
+    "title": "APIキーが作成されました",
+    "description": "このキーは今すぐコピーしてください — 後から表示されません。",
+    "copied": "コピーしました！",
+    "copy": "クリップボードにコピー",
+    "done": "完了"
   },
   "revoke": {
-    "title": "Revoke API Key",
-    "description": "Are you sure you want to revoke \"{{name}}\"? This cannot be undone.",
-    "confirmLabel": "Revoke"
+    "title": "APIキーの無効化",
+    "description": "「{{name}}」を無効化してもよろしいですか？この操作は元に戻せません。",
+    "confirmLabel": "無効化"
   },
   "toast": {
-    "created": "API key created",
-    "revoked": "API key revoked",
-    "failedCreate": "Failed to create API key",
-    "failedRevoke": "Failed to revoke API key"
+    "created": "APIキーを作成しました",
+    "revoked": "APIキーを無効化しました",
+    "failedCreate": "APIキーの作成に失敗しました",
+    "failedRevoke": "APIキーの無効化に失敗しました"
   },
-  "never": "Never",
-  "neverUsed": "Never used",
-  "tenantBadgeSystem": "System",
-  "tenantBadgeUnknown": "Unknown",
-  "columns.expiry": "Expiry",
+  "never": "無期限",
+  "neverUsed": "未使用",
+  "tenantBadgeSystem": "システム",
+  "tenantBadgeUnknown": "不明",
+  "columns.expiry": "有効期限",
   "codeDialog": {
-    "title": "API Key Usage",
-    "description": "Use this API key to authenticate with the gateway HTTP API.",
-    "copy": "Copy",
-    "copied": "Copied!",
+    "title": "APIキーの使用方法",
+    "description": "このAPIキーを使用してゲートウェイのHTTP APIに認証します。",
+    "copy": "コピー",
+    "copied": "コピーしました！",
     "tabs": {
       "curl": "cURL",
       "typescript": "TypeScript",
       "go": "Go"
     },
     "comments": {
-      "chat": "Chat with an agent (OpenAI-compatible)",
-      "listAgents": "List agents",
-      "listSessions": "List sessions"
+      "chat": "エージェントとチャット（OpenAI互換）",
+      "listAgents": "エージェント一覧を取得",
+      "listSessions": "セッション一覧を取得"
     }
   }
 }

@@ -1,25 +1,25 @@
 {
-  "title": "Storage",
-  "description": "Workspace file browser",
+  "title": "ストレージ",
+  "description": "ワークスペースのファイルブラウザ",
   "descriptionWithPath": "{{path}} — {{size}}",
-  "sizeCacheInfo": "Storage size is cached for 60 minutes",
-  "unsupportedFile": "This file type is not supported for preview",
-  "download": "Download",
+  "sizeCacheInfo": "ストレージサイズは 60 分間キャッシュされます",
+  "unsupportedFile": "このファイルタイプはプレビューに対応していません",
+  "download": "ダウンロード",
   "delete": {
-    "fileTitle": "Delete file",
-    "folderTitle": "Delete folder",
-    "description": "Are you sure you want to delete {{name}}?",
-    "folderWarning": " All contents will be removed recursively.",
-    "undone": " This action cannot be undone.",
-    "deleting": "Deleting...",
-    "confirmLabel": "Delete"
+    "fileTitle": "ファイルを削除",
+    "folderTitle": "フォルダを削除",
+    "description": "本当に {{name}} を削除しますか？",
+    "folderWarning": " すべての内容が再帰的に削除されます。",
+    "undone": " この操作は元に戻せません。",
+    "deleting": "削除中...",
+    "confirmLabel": "削除"
   },
   "upload": {
-    "title": "Upload to Storage",
-    "description": "Upload files to the data directory"
+    "title": "ストレージにアップロード",
+    "description": "ファイルをデータディレクトリにアップロード"
   },
   "toast": {
-    "deleted": "File deleted",
-    "deleteFailed": "Failed to delete file"
+    "deleted": "ファイルを削除しました",
+    "deleteFailed": "ファイルの削除に失敗しました"
   }
 }

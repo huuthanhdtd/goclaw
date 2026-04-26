@@ -1,93 +1,93 @@
 {
-  "title": "Dashboard",
-  "description": "Gateway overview and quota usage",
+  "title": "ダッシュボード",
+  "description": "ゲートウェイの概要とクォータ使用状況",
   "tabs": {
-    "overview": "Overview",
-    "usage": "Usage"
+    "overview": "概要",
+    "usage": "使用状況"
   },
   "statCards": {
-    "requestsToday": "Requests Today",
-    "tokensToday": "Tokens Today",
-    "costToday": "Cost Today",
-    "agents": "Agents",
-    "channels": "Channels",
-    "channelsAttention": "{{count}} need attention",
-    "running": "running",
-    "online": "online",
-    "users": "{{count}} users",
-    "inOut": "{{input}} in / {{output}} out"
+    "requestsToday": "今日のリクエスト",
+    "tokensToday": "今日のトークン",
+    "costToday": "今日のコスト",
+    "agents": "エージェント",
+    "channels": "チャンネル",
+    "channelsAttention": "{{count}}件が対応必要",
+    "running": "実行中",
+    "online": "オンライン",
+    "users": "{{count}}ユーザー",
+    "inOut": "{{input}}入力 / {{output}}出力"
   },
   "providers": {
-    "noProvidersTitle": "No LLM providers configured",
-    "noEnabledTitle": "No LLM providers enabled",
-    "noProvidersDesc": "You need to add at least one LLM provider before agents can work. ",
-    "noEnabledDesc": "All providers are currently disabled. Enable at least one to start using agents. ",
-    "goToSettings": "Go to Provider Settings"
+    "noProvidersTitle": "LLMプロバイダーが設定されていません",
+    "noEnabledTitle": "有効なLLMプロバイダーがありません",
+    "noProvidersDesc": "エージェントを使用するには、少なくとも1つのLLMプロバイダーを追加する必要があります。",
+    "noEnabledDesc": "現在すべてのプロバイダーが無効です。エージェントを使用するには少なくとも1つ有効化してください。",
+    "goToSettings": "プロバイダー設定へ"
   },
   "systemHealth": {
-    "title": "System Health",
-    "uptime": "Uptime",
-    "version": "Version",
-    "database": "Database",
-    "providers": "Providers",
-    "tools": "Tools",
-    "sessions": "Sessions",
-    "clients": "Clients",
-    "channels": "Channels",
-    "needsAttention": "Needs attention",
-    "channelsNeedingAttention": "{{count}} channels",
-    "failedCount": "{{count}} failed",
-    "warningCountOne": "{{count}} warning",
-    "warningCountOther": "{{count}} warnings",
-    "moreAttention": "+{{count}} more",
-    "active": "{{count}} active",
-    "none": "none",
-    "runtimes": "Runtimes"
+    "title": "システム状態",
+    "uptime": "稼働時間",
+    "version": "バージョン",
+    "database": "データベース",
+    "providers": "プロバイダー",
+    "tools": "ツール",
+    "sessions": "セッション",
+    "clients": "クライアント",
+    "channels": "チャンネル",
+    "needsAttention": "対応が必要",
+    "channelsNeedingAttention": "{{count}}チャンネル",
+    "failedCount": "{{count}}件失敗",
+    "warningCountOne": "{{count}}件の警告",
+    "warningCountOther": "{{count}}件の警告",
+    "moreAttention": "他{{count}}件",
+    "active": "{{count}}件アクティブ",
+    "none": "なし",
+    "runtimes": "ランタイム"
   },
   "connectedClients": {
-    "title": "Connected Clients",
-    "noClients": "No clients connected",
+    "title": "接続中クライアント",
+    "noClients": "接続中のクライアントはいません",
     "columns": {
       "ip": "IP",
-      "user": "User",
-      "role": "Role",
-      "connected": "Connected"
+      "user": "ユーザー",
+      "role": "ロール",
+      "connected": "接続中"
     },
-    "you": "you"
+    "you": "あなた"
   },
   "cronJobs": {
-    "title": "Cron Jobs",
-    "manage": "Manage",
-    "noJobs": "No cron jobs configured",
-    "disabled": "disabled"
+    "title": "クロンジョブ",
+    "manage": "管理",
+    "noJobs": "クロンジョブは設定されていません",
+    "disabled": "無効"
   },
   "recentRequests": {
-    "title": "Recent Requests",
-    "viewAll": "View All",
-    "noRequests": "No recent requests",
+    "title": "最近のリクエスト",
+    "viewAll": "すべて表示",
+    "noRequests": "最近のリクエストはありません",
     "columns": {
-      "time": "Time",
-      "name": "Name",
-      "user": "User",
-      "channel": "Channel",
-      "tokens": "Tokens",
-      "duration": "Duration",
-      "status": "Status"
+      "time": "時間",
+      "name": "名前",
+      "user": "ユーザー",
+      "channel": "チャンネル",
+      "tokens": "トークン",
+      "duration": "所要時間",
+      "status": "ステータス"
     }
   },
   "quotaUsage": {
-    "title": "Quota Usage",
+    "title": "クォータ使用状況",
     "columns": {
-      "userGroup": "User / Group",
-      "hour": "Hour",
-      "day": "Day",
-      "week": "Week"
+      "userGroup": "ユーザー / グループ",
+      "hour": "時間",
+      "day": "日",
+      "week": "週"
     },
-    "noLimit": "no limit"
+    "noLimit": "制限なし"
   },
   "embedding": {
-    "title": "Embedding",
-    "notConfigured": "Not configured",
-    "configure": "Configure in Providers →"
+    "title": "埋め込み",
+    "notConfigured": "未設定",
+    "configure": "プロバイダーで設定 →"
   }
 }

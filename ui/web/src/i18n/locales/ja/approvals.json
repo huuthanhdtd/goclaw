@@ -1,33 +1,33 @@
 {
-  "title": "Approvals",
-  "description": "Pending execution approvals",
-  "pending": "{{count}} pending",
-  "emptyTitle": "No pending approvals",
-  "emptyDescription": "All execution requests have been resolved. New requests will appear here in real-time.",
-  "allowOnce": "Allow Once",
-  "allowAlways": "Allow Always",
-  "deny": "Deny",
+  "title": "承認",
+  "description": "保留中の実行承認",
+  "pending": "{{count}} 件の保留",
+  "emptyTitle": "保留中の承認はありません",
+  "emptyDescription": "すべての実行リクエストは処理されました。新しいリクエストはリアルタイムでここに表示されます。",
+  "allowOnce": "一度だけ許可",
+  "allowAlways": "常に許可",
+  "deny": "拒否",
   "confirmAllowOnce": {
-    "title": "Allow Once",
-    "description": "Allow execution of \"{{command}}\" from agent \"{{agentId}}\"?"
+    "title": "一度だけ許可",
+    "description": "エージェント「{{agentId}}」からの「{{command}}」の実行を許可しますか？"
   },
   "confirmAllowAlways": {
-    "title": "Allow Always",
-    "description": "Permanently allow \"{{command}}\" for agent \"{{agentId}}\"? This command will be auto-approved in the future."
+    "title": "常に許可",
+    "description": "エージェント「{{agentId}}」に対して「{{command}}」を常に許可しますか？このコマンドは今後自動承認されます。"
   },
   "confirmDeny": {
-    "title": "Deny Execution",
-    "description": "Deny execution request \"{{command}}\" from agent \"{{agentId}}\"?",
-    "confirmLabel": "Deny"
+    "title": "実行を拒否",
+    "description": "エージェント「{{agentId}}」からの実行リクエスト「{{command}}」を拒否しますか？",
+    "confirmLabel": "拒否"
   },
   "toast": {
-    "approved": "Approved",
-    "approvedAlways": "Command always allowed",
-    "approvedOnce": "Command approved",
-    "approveFailed": "Failed to approve",
-    "denied": "Denied",
-    "deniedDesc": "Command denied",
-    "denyFailed": "Failed to deny",
-    "unknownError": "Unknown error"
+    "approved": "承認されました",
+    "approvedAlways": "コマンドは常に許可されます",
+    "approvedOnce": "コマンドが承認されました",
+    "approveFailed": "承認に失敗しました",
+    "denied": "拒否されました",
+    "deniedDesc": "コマンドは拒否されました",
+    "denyFailed": "拒否に失敗しました",
+    "unknownError": "不明なエラー"
   }
 }

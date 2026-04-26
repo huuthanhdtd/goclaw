@@ -1,26 +1,26 @@
 {
-  "title": "Activity Log",
-  "description": "Audit trail of admin and configuration changes.",
+  "title": "アクティビティログ",
+  "description": "管理者および設定変更の監査履歴です。",
   "filters": {
-    "action": "Action",
-    "allActions": "All Actions",
-    "agentCreated": "Agent Created",
-    "agentUpdated": "Agent Updated",
-    "agentDeleted": "Agent Deleted",
-    "entityType": "Entity Type",
-    "allEntities": "All Entities",
-    "agent": "Agent"
+    "action": "アクション",
+    "allActions": "すべてのアクション",
+    "agentCreated": "エージェント作成",
+    "agentUpdated": "エージェント更新",
+    "agentDeleted": "エージェント削除",
+    "entityType": "エンティティタイプ",
+    "allEntities": "すべてのエンティティ",
+    "agent": "エージェント"
   },
   "table": {
-    "action": "Action",
-    "actor": "Actor",
-    "entity": "Entity",
-    "entityId": "Entity ID",
-    "ip": "IP Address",
-    "time": "Time"
+    "action": "アクション",
+    "actor": "実行者",
+    "entity": "エンティティ",
+    "entityId": "エンティティID",
+    "ip": "IPアドレス",
+    "time": "時間"
   },
   "empty": {
-    "title": "No activity logs",
-    "description": "Activity logs will appear here when admin actions are performed."
+    "title": "アクティビティログはありません",
+    "description": "管理者の操作が行われると、ここにアクティビティログが表示されます。"
   }
 }

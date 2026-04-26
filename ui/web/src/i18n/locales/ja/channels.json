@@ -1,510 +1,510 @@
 {
-  "title": "Channels",
-  "description": "Manage channel instances",
-  "statusDescription": "Communication channel status",
-  "addChannel": "Add Channel",
-  "refresh": "Refresh",
-  "searchPlaceholder": "Search channels...",
-  "emptyTitle": "No channels",
-  "emptyDescription": "Add your first channel instance to get started.",
-  "emptyStatusDescription": "No communication channels are configured.",
-  "noMatchTitle": "No matching channels",
-  "noMatchDescription": "Try a different search term.",
+  "title": "チャンネル",
+  "description": "チャンネルインスタンスを管理",
+  "statusDescription": "通信チャンネルの状態",
+  "addChannel": "チャンネルを追加",
+  "refresh": "更新",
+  "searchPlaceholder": "チャンネルを検索...",
+  "emptyTitle": "チャンネルがありません",
+  "emptyDescription": "最初のチャンネルインスタンスを追加して開始してください。",
+  "emptyStatusDescription": "通信チャンネルが設定されていません。",
+  "noMatchTitle": "一致するチャンネルがありません",
+  "noMatchDescription": "別の検索語を試してください。",
   "columns": {
-    "name": "Name",
-    "type": "Type",
-    "agent": "Agent",
-    "status": "Status",
-    "enabled": "Enabled",
-    "actions": "Actions"
+    "name": "名前",
+    "type": "タイプ",
+    "agent": "エージェント",
+    "status": "ステータス",
+    "enabled": "有効",
+    "actions": "操作"
   },
   "status": {
-    "running": "Running",
-    "stopped": "Stopped",
-    "checking": "Checking",
-    "degraded": "Degraded",
-    "starting": "Starting",
-    "registered": "Configured",
-    "failed": "Failed"
+    "running": "稼働中",
+    "stopped": "停止中",
+    "checking": "確認中",
+    "degraded": "低下",
+    "starting": "起動中",
+    "registered": "設定済み",
+    "failed": "失敗"
   },
-  "enabled": "Enabled",
-  "disabled": "Disabled",
+  "enabled": "有効",
+  "disabled": "無効",
   "actions": {
-    "reauthenticate": "Re-authenticate",
-    "authenticate": "Authenticate to start channel",
-    "reauthShort": "Re-auth",
-    "openCredentials": "Open credentials",
-    "openAdvanced": "Open advanced",
-    "inspect": "Inspect issue"
+    "reauthenticate": "再認証",
+    "authenticate": "チャンネルを開始するために認証",
+    "reauthShort": "再認証",
+    "openCredentials": "認証情報を開く",
+    "openAdvanced": "詳細設定を開く",
+    "inspect": "問題を確認"
   },
   "list": {
-    "failureStreak": "{{count}} failures in a row",
-    "openChannelDetail": "Open channel detail for the latest diagnosis",
-    "nextStep": "Next step"
+    "failureStreak": "{{count}} 回連続失敗",
+    "openChannelDetail": "最新の診断のためにチャンネル詳細を開く",
+    "nextStep": "次のステップ"
   },
   "failureKind": {
-    "auth": "Auth",
-    "config": "Config",
-    "network": "Network",
-    "unknown": "Attention"
+    "auth": "認証",
+    "config": "設定",
+    "network": "ネットワーク",
+    "unknown": "注意"
   },
   "delete": {
-    "title": "Delete Channel Instance",
-    "description": "Are you sure you want to delete \"{{name}}\"? This action cannot be undone.",
-    "confirmLabel": "Delete"
+    "title": "チャンネルインスタンスを削除",
+    "description": "「{{name}}」を削除してもよろしいですか？この操作は元に戻せません。",
+    "confirmLabel": "削除"
   },
   "form": {
-    "createTitle": "Create Channel Instance",
-    "editTitle": "Edit Channel Instance",
-    "key": "Key *",
+    "createTitle": "チャンネルインスタンスを作成",
+    "editTitle": "チャンネルインスタンスを編集",
+    "key": "キー *",
     "keyPlaceholder": "my-telegram-bot",
-    "keyHint": "Unique slug used as channel identifier",
-    "displayName": "Display Name",
-    "displayNamePlaceholder": "Sales Bot",
-    "channelType": "Channel Type *",
-    "agent": "Agent *",
-    "selectAgent": "Select agent",
-    "credentials": "Credentials",
-    "credentialsHint": "(leave blank to keep current)",
-    "credentialsEncrypted": "Encrypted server-side. Never returned in API responses.",
-    "configuration": "Configuration",
-    "enabled": "Enabled",
-    "cancel": "Cancel",
-    "create": "Create",
-    "update": "Update",
-    "saving": "Saving...",
-    "step": "Step {{current}} of {{total}}",
-    "authenticate": "Authenticate — {{label}}",
-    "configure": "Configure — {{label}}",
-    "skip": "Skip",
-    "done": "Done",
+    "keyHint": "チャンネル識別子として使用される一意のスラッグ",
+    "displayName": "表示名",
+    "displayNamePlaceholder": "セールスボット",
+    "channelType": "チャンネルタイプ *",
+    "agent": "エージェント *",
+    "selectAgent": "エージェントを選択",
+    "credentials": "認証情報",
+    "credentialsHint": "（空白のままにすると現在の値を保持）",
+    "credentialsEncrypted": "サーバー側で暗号化され、APIレスポンスには返されません。",
+    "configuration": "設定",
+    "enabled": "有効",
+    "cancel": "キャンセル",
+    "create": "作成",
+    "update": "更新",
+    "saving": "保存中...",
+    "step": "ステップ {{current}} / {{total}}",
+    "authenticate": "認証 — {{label}}",
+    "configure": "設定 — {{label}}",
+    "skip": "スキップ",
+    "done": "完了",
     "errors": {
-      "keyRequired": "Key is required",
-      "keySlug": "Key must be a valid slug (lowercase letters, numbers, hyphens only)",
-      "agentRequired": "Agent is required",
-      "requiredFields": "Required: {{fields}}",
-      "failedSave": "Failed to save",
-      "failedSaveConfig": "Failed to save configuration"
+      "keyRequired": "キーは必須です",
+      "keySlug": "キーは有効なスラッグである必要があります（小文字英字、数字、ハイフンのみ）",
+      "agentRequired": "エージェントは必須です",
+      "requiredFields": "必須: {{fields}}",
+      "failedSave": "保存に失敗しました",
+      "failedSaveConfig": "設定の保存に失敗しました"
     },
     "authStatus": {
-      "authenticated": "Authenticated",
-      "notAuthenticated": "Not authenticated",
-      "useQrHint": "— Use the QR login button from the channels table"
+      "authenticated": "認証済み",
+      "notAuthenticated": "未認証",
+      "useQrHint": "— チャンネル一覧のQRログインボタンを使用してください"
     }
   },
   "detail": {
-    "agent": "Agent: {{name}}",
-    "lastChecked": "Last checked: {{value}}",
-    "checkedRelative": "Checked {{value}}",
-    "advanced": "Advanced",
-    "advancedTitle": "Advanced Settings",
-    "policies": "Policies",
-    "policiesDesc": "Message handling policies",
-    "network": "Network",
-    "networkDesc": "Server and proxy configuration",
-    "limits": "Limits",
-    "limitsDesc": "Message and media constraints",
-    "streaming": "Streaming",
-    "streamingDesc": "Real-time message streaming options",
-    "behavior": "Behavior",
-    "behaviorDesc": "Response behavior configuration",
-    "accessControl": "Access Control",
-    "accessControlDesc": "User access restrictions",
-    "reviewDiagnostics": "Review the latest diagnosis in this channel before changing settings.",
-    "whatHappened": "What happened",
-    "recommendedAction": "Recommended action",
-    "technicalDetail": "Technical detail",
+    "agent": "エージェント: {{name}}",
+    "lastChecked": "最終確認: {{value}}",
+    "checkedRelative": "{{value}} 前に確認済み",
+    "advanced": "詳細設定",
+    "advancedTitle": "高度な設定",
+    "policies": "ポリシー",
+    "policiesDesc": "メッセージ処理ポリシー",
+    "network": "ネットワーク",
+    "networkDesc": "サーバーおよびプロキシ設定",
+    "limits": "制限",
+    "limitsDesc": "メッセージおよびメディアの制約",
+    "streaming": "ストリーミング",
+    "streamingDesc": "リアルタイムメッセージ配信オプション",
+    "behavior": "動作",
+    "behaviorDesc": "応答動作の設定",
+    "accessControl": "アクセス制御",
+    "accessControlDesc": "ユーザーアクセス制限",
+    "reviewDiagnostics": "設定を変更する前に、このチャネルで最新の診断を確認してください。",
+    "whatHappened": "発生した事象",
+    "recommendedAction": "推奨アクション",
+    "technicalDetail": "技術的詳細",
     "tabs": {
-      "general": "General",
-      "config": "Config",
-      "credentials": "Credentials",
-      "groups": "Groups",
-      "managers": "Managers"
+      "general": "一般",
+      "config": "設定",
+      "credentials": "認証情報",
+      "groups": "グループ",
+      "managers": "管理者"
     },
     "general": {
-      "identity": "Identity",
-      "name": "Name",
-      "nameHint": "Unique slug (read-only)",
-      "channelType": "Channel Type",
-      "displayName": "Display Name",
-      "displayNamePlaceholder": "Friendly name",
-      "agent": "Agent",
-      "selectAgent": "Select agent",
-      "enabled": "Enabled",
-      "saved": "Saved",
-      "saveChanges": "Save Changes",
-      "saving": "Saving..."
+      "identity": "識別情報",
+      "name": "名前",
+      "nameHint": "ユニークなスラッグ (読み取り専用)",
+      "channelType": "チャネルタイプ",
+      "displayName": "表示名",
+      "displayNamePlaceholder": "フレンドリー名",
+      "agent": "エージェント",
+      "selectAgent": "エージェントを選択",
+      "enabled": "有効",
+      "saved": "保存済み",
+      "saveChanges": "変更を保存",
+      "saving": "保存中…"
     },
     "credentials": {
-      "hint": "Leave fields blank to keep current values. Credentials are encrypted server-side and never returned in API responses.",
-      "noSchema": "No credentials schema for this channel type.",
-      "noCredentials": "No credentials to update",
-      "failedSave": "Failed to save",
-      "saved": "Saved",
-      "updateCredentials": "Update Credentials",
-      "saving": "Saving..."
+      "hint": "現在の値を保持するには空欄のままにしてください。認証情報はサーバー側で暗号化され、APIレスポンスには返されません。",
+      "noSchema": "このチャネルタイプには認証情報スキーマがありません。",
+      "noCredentials": "更新する認証情報がありません",
+      "failedSave": "保存に失敗しました",
+      "saved": "保存済み",
+      "updateCredentials": "認証情報を更新",
+      "saving": "保存中…"
     },
     "config": {
-      "noSchema": "No configuration schema for this channel type.",
-      "saved": "Saved",
-      "saveConfig": "Save Config",
-      "saving": "Saving...",
-      "webhookUrlLabel": "Set this as your Lark app's Event Request URL:",
-      "copyPath": "Copy path"
+      "noSchema": "このチャネルタイプには設定スキーマがありません。",
+      "saved": "保存済み",
+      "saveConfig": "設定を保存",
+      "saving": "保存中…",
+      "webhookUrlLabel": "LarkアプリのイベントリクエストURLとして設定してください:",
+      "copyPath": "パスをコピー"
     },
     "groups": {
-      "saved": "Saved",
-      "saveGroups": "Save Groups",
-      "saving": "Saving..."
+      "saved": "保存済み",
+      "saveGroups": "グループを保存",
+      "saving": "保存中…"
     },
     "timeline": {
-      "title": "Timeline",
-      "firstFailed": "First failed",
-      "lastChecked": "Last checked",
-      "failures": "Failures",
-      "failureStreak": "{{count}} in a row",
-      "failureTotal": "{{count}} total",
-      "lastHealthy": "Last healthy",
-      "noData": "No recent channel checks recorded yet."
+      "title": "タイムライン",
+      "firstFailed": "最初の失敗",
+      "lastChecked": "最終確認",
+      "failures": "失敗",
+      "failureStreak": "連続{{count}}回",
+      "failureTotal": "合計{{count}}回",
+      "lastHealthy": "最後の正常時",
+      "noData": "最近のチャネル確認はまだ記録されていません。"
     },
     "managers": {
-      "description": "Manage which users have manager permissions in group chats.",
-      "groups": "Groups",
-      "noManagerGroups": "No manager groups",
-      "noManagerGroupsHint": "Use the form below to add a manager to a group.",
-      "loadingManagers": "Loading managers...",
-      "noManagers": "No managers in this group.",
-      "managersCount": "{{count}} manager",
-      "managersCountPlural": "{{count}} managers",
-      "searchContacts": "Search contacts...",
-      "noResults": "No contacts found",
+      "description": "グループチャットで管理者権限を持つユーザーを管理します。",
+      "groups": "グループ",
+      "noManagerGroups": "管理者グループなし",
+      "noManagerGroupsHint": "以下のフォームを使って、グループに管理者を追加してください。",
+      "loadingManagers": "管理者を読み込み中…",
+      "noManagers": "このグループには管理者がいません。",
+      "managersCount": "{{count}} 人の管理者",
+      "managersCountPlural": "{{count}} 人の管理者",
+      "searchContacts": "連絡先を検索…",
+      "noResults": "連絡先が見つかりません",
       "columns": {
-        "userId": "User ID",
-        "name": "Name",
-        "username": "Username"
+        "userId": "ユーザーID",
+        "name": "名前",
+        "username": "ユーザー名"
       },
       "addForm": {
-        "title": "Add Manager to New Group",
-        "hint": "Add a manager to a group that doesn't appear in the list above.",
-        "groupId": "Group ID *",
-        "groupIdPlaceholder": "e.g. group:telegram:-100123456",
-        "userId": "User ID *",
-        "userIdPlaceholder": "Search or enter user ID",
-        "displayName": "Display Name",
-        "username": "Username",
-        "optional": "Optional",
-        "usernameWithout": "Optional (without @)",
-        "adding": "Adding...",
-        "addManager": "Add Manager",
-        "add": "Add",
+        "title": "新しいグループに管理者を追加",
+        "hint": "上のリストに表示されないグループに管理者を追加します。",
+        "groupId": "グループID *",
+        "groupIdPlaceholder": "例: group:telegram:-100123456",
+        "userId": "ユーザーID *",
+        "userIdPlaceholder": "検索またはユーザーIDを入力",
+        "displayName": "表示名",
+        "username": "ユーザー名",
+        "optional": "任意",
+        "usernameWithout": "任意 (@なし)",
+        "adding": "追加中…",
+        "addManager": "管理者を追加",
+        "add": "追加",
         "errors": {
-          "groupUserRequired": "Group ID and User ID are required",
-          "failedAdd": "Failed to add manager"
+          "groupUserRequired": "グループIDとユーザーIDは必須です",
+          "failedAdd": "管理者の追加に失敗しました"
         }
       }
     }
   },
   "fieldConfig": {
-    "token": { "label": "Bot Token", "help": "From @BotFather" },
-    "bot_token": { "label": "Bot Token" },
+    "token": { "label": "ボットトークン", "help": "@BotFatherから取得" },
+    "bot_token": { "label": "ボットトークン" },
     "app_token": {
-      "label": "App-Level Token",
-      "help": "App-Level Token with connections:write scope (required for Socket Mode)"
+      "label": "アプリレベルトークン",
+      "help": "Socket Modeに必要なconnections:writeスコープを持つアプリレベルトークン"
     },
     "user_token": {
-      "label": "User Token (Optional)",
-      "help": "Optional: User OAuth Token for custom bot identity. Leave empty to use default bot identity."
+      "label": "ユーザートークン（任意）",
+      "help": "任意: カスタムボットID用のユーザーOAuthトークン。空欄の場合はデフォルトのボットIDを使用"
     },
-    "app_id": { "label": "App ID" },
-    "app_secret": { "label": "App Secret" },
-    "encrypt_key": { "label": "Encrypt Key", "help": "For webhook mode" },
+    "app_id": { "label": "アプリID" },
+    "app_secret": { "label": "アプリシークレット" },
+    "encrypt_key": { "label": "暗号化キー", "help": "Webhookモード用" },
     "verification_token": {
-      "label": "Verification Token",
-      "help": "For webhook mode"
+      "label": "検証トークン",
+      "help": "Webhookモード用"
     },
-    "webhook_secret": { "label": "Webhook Secret" },
+    "webhook_secret": { "label": "Webhookシークレット" },
     "api_server": {
-      "label": "API Server URL",
-      "help": "Custom Telegram Bot API server for large file uploads (up to 2GB). Leave empty for default."
+      "label": "APIサーバーURL",
+      "help": "大容量ファイルアップロード用のカスタムTelegram Bot APIサーバー（最大2GB）。空欄の場合はデフォルト"
     },
     "proxy": {
-      "label": "HTTP Proxy",
-      "help": "Route bot traffic through an HTTP proxy"
+      "label": "HTTPプロキシ",
+      "help": "ボットトラフィックをHTTPプロキシ経由でルーティング"
     },
-    "dm_policy": { "label": "DM Policy" },
-    "group_policy": { "label": "Group Policy" },
+    "dm_policy": { "label": "DMポリシー" },
+    "group_policy": { "label": "グループポリシー" },
     "require_mention": {
-      "label": "Require @mention in groups",
-      "disabledHint": "Multi-bot mode always listens to all messages"
+      "label": "グループで@メンションを必須にする",
+      "disabledHint": "マルチボットモードでは常に全てのメッセージをリッスン"
     },
     "mention_mode": {
-      "label": "Group Response Behavior",
-      "help": "How the bot decides when to respond in groups with multiple bots."
+      "label": "グループ応答動作",
+      "help": "複数ボットが存在するグループでの応答タイミングを決定"
     },
     "history_limit": {
-      "label": "Group History Limit",
-      "help": "Max pending group messages for context (0 = disabled)"
+      "label": "グループ履歴制限",
+      "help": "コンテキスト用の保留中グループメッセージ最大数（0 = 無効）"
     },
     "dm_stream": {
-      "label": "DM Streaming",
-      "help": "Stream response progressively in DMs"
+      "label": "DMストリーミング",
+      "help": "DMで応答を段階的にストリーム"
     },
     "group_stream": {
-      "label": "Group Streaming",
-      "help": "Stream response progressively in groups"
+      "label": "グループストリーミング",
+      "help": "グループで応答を段階的にストリーム"
     },
     "draft_transport": {
-      "label": "Draft Preview",
-      "help": "Use stealth draft preview for answer stream in DMs — no notification per edit (requires DM Streaming)"
+      "label": "下書きプレビュー",
+      "help": "DMで回答ストリーム用にステルス下書きプレビューを使用 — 編集ごとに通知なし（DMストリーミングが必要）"
     },
     "reasoning_stream": {
-      "label": "Show Reasoning",
-      "help": "Display AI thinking as a separate message before the answer (requires streaming)"
+      "label": "思考を表示",
+      "help": "回答前にAIの思考を別メッセージとして表示（ストリーミング必須）"
     },
-    "reaction_level": { "label": "Reaction Level" },
-    "media_max_mb": { "label": "Max Media Size (MB)" },
-    "link_preview": { "label": "Link Preview" },
-    "allow_from": { "label": "Allowed Users" },
+    "reaction_level": { "label": "反応レベル" },
+    "media_max_mb": { "label": "最大メディアサイズ（MB）" },
+    "link_preview": { "label": "リンクプレビュー" },
+    "allow_from": { "label": "許可ユーザー" },
     "block_reply": {
-      "label": "Block Reply",
-      "help": "Deliver intermediate text during tool iterations"
+      "label": "中間応答をブロック",
+      "help": "ツール実行中の中間テキストを配信"
     },
-    "domain": { "label": "Domain" },
+    "domain": { "label": "ドメイン" },
     "connection_mode": {
-      "label": "Connection Mode",
-      "help": "WebSocket needs no public IP — outbound connection only"
+      "label": "接続モード",
+      "help": "WebSocketは公開IP不要 — アウトバウンド接続のみ"
     },
     "webhook_port": {
-      "label": "Webhook Port",
-      "help": "0 = share main gateway port (recommended)"
+      "label": "Webhookポート",
+      "help": "0 = メインゲートウェイポートを共有（推奨）"
     },
     "webhook_path": {
-      "label": "Webhook Path",
-      "help": "Path on main server for Lark events"
+      "label": "Webhookパス",
+      "help": "Larkイベント用のメインサーバーパス"
     },
     "webhook_url": { "label": "Webhook URL" },
     "topic_session_mode": {
-      "label": "Topic Session Mode",
-      "help": "Use thread root_id for session isolation"
+      "label": "トピックセッションモード",
+      "help": "セッション分離のためにスレッドroot_idを使用"
     },
-    "render_mode": { "label": "Render Mode" },
+    "render_mode": { "label": "レンダリングモード" },
     "text_chunk_limit": {
-      "label": "Text Chunk Limit",
-      "help": "Max characters per message"
+      "label": "テキストチャンク制限",
+      "help": "メッセージごとの最大文字数"
     },
     "group_allow_from": {
-      "label": "Group Allowed Users",
-      "help": "Separate allowlist for group senders"
+      "label": "グループ許可ユーザー",
+      "help": "グループ送信者専用の許可リスト"
     },
     "native_stream": {
-      "label": "Native Streaming (Agents & AI Apps)",
-      "help": "Use Slack's ChatStreamer API for native streaming. Falls back to edit-in-place if unavailable."
+      "label": "ネイティブストリーミング（エージェント & AIアプリ）",
+      "help": "SlackのChatStreamer APIを使用。未対応時はインプレース編集にフォールバック"
     },
     "debounce_delay": {
-      "label": "Debounce Delay (ms)",
-      "help": "Milliseconds to wait before dispatching rapid messages. Set 0 to disable."
+      "label": "デバウンス遅延（ms）",
+      "help": "高速連続メッセージを送信前に待機するミリ秒。0で無効"
     },
     "thread_ttl": {
-      "label": "Thread Participation TTL (hours)",
-      "help": "Hours before bot stops auto-replying in threads it participated in. 0 = always require @mention."
+      "label": "スレッド参加TTL（時間）",
+      "help": "ボットが自動応答を停止するまでの時間。0 = 常に@メンションが必要"
     },
     "skills": {
-      "label": "Skills Filter",
-      "help": "Limit available skills for this group"
+      "label": "スキルフィルター",
+      "help": "このグループで使用可能なスキルを制限"
     },
     "tools": {
-      "label": "Tool Allowlist",
-      "help": "Restrict which tools the agent can use in this group"
+      "label": "ツール許可リスト",
+      "help": "このグループでエージェントが使用可能なツールを制限"
     },
-    "system_prompt": { "label": "System Prompt" },
-    "platform": { "label": "Platform", "help": "Select the platform this Pancake page serves." },
-    "tiktok_type": { "label": "TikTok Type", "help": "Select the TikTok account type for this page" },
+    "system_prompt": { "label": "システムプロンプト" },
+    "platform": { "label": "プラットフォーム", "help": "このPancakeページが提供するプラットフォームを選択" },
+    "tiktok_type": { "label": "TikTokタイプ", "help": "このページのTikTokアカウントタイプを選択" },
     "features.private_reply": {
-      "label": "Private Reply (Comment → DM)",
-      "help": "Send a one-time DM to commenters after the public reply. Facebook/Instagram only. Meta allows DM within 7 days of the comment."
+      "label": "非公開返信（コメント→DM）",
+      "help": "公開返信後にコメント投稿者に一度だけDMを送信。Facebook/Instagram限定。Metaはコメント後7日以内にDM可能"
     },
     "private_reply_message": {
-      "label": "DM Message",
-      "help": "Supports the placeholders commenter_name and post_title. Empty = default English text."
+      "label": "DMメッセージ",
+      "help": "commenter_nameおよびpost_titleのプレースホルダをサポート。空欄 = デフォルト英語テキスト"
     }
   },
   "fieldOptions": {
     "block_reply": {
-      "inherit": "Inherit from gateway",
-      "true": "Enabled",
-      "false": "Disabled"
+      "inherit": "ゲートウェイから継承",
+      "true": "有効",
+      "false": "無効"
     },
     "dm_policy": {
-      "pairing": "Pairing (require code)",
-      "open": "Open (accept all)",
-      "allowlist": "Allowlist only",
-      "disabled": "Disabled"
+      "pairing": "ペアリング（コード必須）",
+      "open": "オープン（全員受け入れ）",
+      "allowlist": "許可リストのみ",
+      "disabled": "無効"
     },
     "group_policy": {
-      "open": "Open (accept all)",
-      "pairing": "Pairing (require approval)",
-      "allowlist": "Allowlist only",
-      "disabled": "Disabled"
+      "open": "オープン（全員受け入れ）",
+      "pairing": "ペアリング（承認必須）",
+      "allowlist": "許可リストのみ",
+      "disabled": "無効"
     },
     "mention_mode": {
-      "strict": "Default (follow @mention setting)",
-      "yield": "Multi-bot (respond unless another bot is @mentioned)"
+      "strict": "デフォルト（@メンション設定に従う）",
+      "yield": "マルチボット（他のボットが@メンションされていない場合に応答）"
     },
     "reaction_level": {
-      "off": "Off",
-      "minimal": "Minimal",
-      "full": "Full"
+      "off": "オフ",
+      "minimal": "最小限",
+      "full": "完全"
     },
     "domain": {
-      "lark": "Lark (Global)",
-      "feishu": "Feishu (China)"
+      "lark": "Lark（グローバル）",
+      "feishu": "Feishu（中国）"
     },
     "connection_mode": {
       "webhook": "Webhook",
-      "websocket": "WebSocket (recommended)"
+      "websocket": "WebSocket（推奨）"
     },
     "topic_session_mode": {
-      "disabled": "Disabled",
-      "enabled": "Enabled"
+      "disabled": "無効",
+      "enabled": "有効"
     },
     "render_mode": {
-      "auto": "Auto",
-      "raw": "Raw",
-      "card": "Card"
+      "auto": "自動",
+      "raw": "生データ",
+      "card": "カード"
     },
     "platform": {
-      "facebook":    "Facebook",
-      "instagram":   "Instagram",
-      "threads":     "Threads (Beta)",
-      "tiktok":      "TikTok",
-      "youtube":     "YouTube (Beta)",
-      "shopee":      "Shopee",
-      "line":        "Line",
-      "google":      "Google",
-      "chat_plugin": "Chat Plugin",
-      "lazada":      "Lazada",
-      "tokopedia":   "Tokopedia"
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "threads": "Threads（ベータ）",
+      "tiktok": "TikTok",
+      "youtube": "YouTube（ベータ）",
+      "shopee": "Shopee",
+      "line": "Line",
+      "google": "Google",
+      "chat_plugin": "チャットプラグイン",
+      "lazada": "Lazada",
+      "tokopedia": "Tokopedia"
     }
   },
   "groupOverrides": {
-    "title": "Group & Topic Overrides",
-    "hint": "Override channel defaults per group chat or forum topic. Use \"*\" as group ID for wildcard defaults.",
-    "groupLabel": "Group: {{id}}",
-    "groupWildcard": "* (wildcard)",
-    "addGroupPlaceholder": "Chat ID (e.g. -100123456) or *",
-    "addGroup": "Add Group",
-    "knownGroups": "Known groups",
-    "topicOverrides": "Topic Overrides",
-    "topicLabel": "Topic: {{id}}",
-    "addTopicPlaceholder": "Topic thread ID",
-    "addTopic": "Add Topic",
+    "title": "グループ & トピック上書き",
+    "hint": "グループチャットやフォーラムトピックごとにチャンネルのデフォルトを上書きします。ワイルドカードデフォルトには「*」を使用します。",
+    "groupLabel": "グループ: {{id}}",
+    "groupWildcard": "*（ワイルドカード）",
+    "addGroupPlaceholder": "チャットID（例: -100123456）または *",
+    "addGroup": "グループを追加",
+    "knownGroups": "既知のグループ",
+    "topicOverrides": "トピック上書き",
+    "topicLabel": "トピック: {{id}}",
+    "addTopicPlaceholder": "トピックスレッドID",
+    "addTopic": "トピックを追加",
     "fieldConfig": {
       "dm_stream": {
-        "label": "DM Streaming",
-        "help": "Stream response progressively in DMs"
+        "label": "DMストリーミング",
+        "help": "DMで応答を段階的にストリーム表示"
       },
       "group_stream": {
-        "label": "Group Streaming",
-        "help": "Stream response progressively in groups"
+        "label": "グループストリーミング",
+        "help": "グループで応答を段階的にストリーム表示"
       },
       "draft_transport": {
-        "label": "Draft Preview",
-        "help": "Use stealth draft preview for answer stream in DMs — no notification per edit (requires DM Streaming)"
+        "label": "ドラフトプレビュー",
+        "help": "DMで回答ストリームをステルスドラフトプレビューで表示 — 編集ごとに通知されません（DMストリーミングが必要）"
       },
       "reasoning_stream": {
-        "label": "Show Reasoning",
-        "help": "Display AI thinking as a separate message before the answer (requires streaming)"
+        "label": "推論を表示",
+        "help": "回答前にAIの思考を別メッセージで表示（ストリーミングが必要）"
       }
     },
     "fields": {
-      "groupPolicy": "Group Policy",
-      "requireMention": "Require @mention",
-      "enabled": "Enabled",
-      "allowedUsers": "Allowed Users",
-      "allowedUsersPlaceholder": "One user ID per line or comma-separated",
-      "skillsFilter": "Skills Filter",
-      "skillsPlaceholder": "One skill name per line (empty = inherit)",
-      "toolAllow": "Tool Allow",
-      "toolAllowPlaceholder": "Select allowed tools (empty = inherit all)...",
-      "toolAllowHint": "Restrict which tools are available in this group. Supports group names like \"group:web\", \"group:fs\". Empty = inherit all tools.",
-      "systemPrompt": "System Prompt",
-      "systemPromptPlaceholder": "Additional system prompt for this group/topic",
-      "inherit": "Inherit (channel default)",
-      "yes": "Yes",
-      "no": "No"
+      "groupPolicy": "グループポリシー",
+      "requireMention": "@メンション必須",
+      "enabled": "有効",
+      "allowedUsers": "許可ユーザー",
+      "allowedUsersPlaceholder": "1行に1ユーザーID、またはカンマ区切り",
+      "skillsFilter": "スキルフィルター",
+      "skillsPlaceholder": "1行に1スキル名（空欄 = 継承）",
+      "toolAllow": "ツール許可",
+      "toolAllowPlaceholder": "許可するツールを選択（空欄 = 全て継承）...",
+      "toolAllowHint": "このグループで利用可能なツールを制限します。「group:web」「group:fs」のようなグループ名もサポート。空欄 = 全ツール継承。",
+      "systemPrompt": "システムプロンプト",
+      "systemPromptPlaceholder": "このグループ/トピック向けの追加システムプロンプト",
+      "inherit": "継承（チャンネルデフォルト）",
+      "yes": "はい",
+      "no": "いいえ"
     }
   },
   "wizard": {
     "zaloPersonal": {
-      "createLabel": "Create & Authenticate",
-      "formBanner": "After creating, you'll authenticate via QR code and configure allowed users."
+      "createLabel": "作成 & 認証",
+      "formBanner": "作成後、QRコードで認証し、許可ユーザーを設定します。"
     },
     "whatsapp": {
-      "createLabel": "Create & Scan QR",
-      "formBanner": "After creating, scan the QR code with WhatsApp to authenticate."
+      "createLabel": "作成 & QRスキャン",
+      "formBanner": "作成後、WhatsAppでQRコードをスキャンして認証します。"
     }
   },
   "fallback": {
-    "authRequiredSummary": "Authentication required",
-    "authRequiredDetail": "Channel instance is enabled but requires sign-in before it can connect.",
-    "authRequiredHeadline": "Reconnect the channel session",
-    "authRequiredHint": "Authenticate this channel again to restore the current session.",
-    "missingCredentialsSummary": "Missing credentials",
-    "missingCredentialsDetail": "Channel instance is enabled but required credentials are incomplete.",
-    "missingCredentialsHeadline": "Complete required credentials",
-    "missingCredentialsHint": "Open credentials and fill the missing or invalid values for this channel."
+    "authRequiredSummary": "認証が必要です",
+    "authRequiredDetail": "チャンネルインスタンスは有効ですが、接続にはサインインが必要です。",
+    "authRequiredHeadline": "チャンネルセッションを再接続",
+    "authRequiredHint": "現在のセッションを復元するために、このチャンネルを再認証してください。",
+    "missingCredentialsSummary": "資格情報が不足しています",
+    "missingCredentialsDetail": "チャンネルインスタンスは有効ですが、必要な資格情報が不完全です。",
+    "missingCredentialsHeadline": "必要な資格情報を入力",
+    "missingCredentialsHint": "資格情報を開き、このチャンネルに必要な値を入力してください。"
   },
   "scopes": {
-    "title": "Required API Permissions",
-    "description": "Your Lark/Feishu app must have these scopes enabled in the Developer Console. Publish a new app version after adding permissions.",
-    "publishReminder": "After adding scopes, set Contact Range to \"All members\" and publish a new app version for changes to take effect."
+    "title": "必要なAPI権限",
+    "description": "Lark/Feishuアプリには、開発者コンソールでこれらのスコープが有効になっている必要があります。権限を追加したら、新しいアプリバージョンを公開してください。",
+    "publishReminder": "スコープ追加後、コンタクト範囲を「すべてのメンバー」に設定し、新しいアプリバージョンを公開してください。"
   },
   "toast": {
-    "created": "Channel created",
-    "createdDesc": "{{name}} has been added",
-    "updated": "Channel updated",
-    "deleted": "Channel deleted",
-    "failedCreate": "Failed to create channel",
-    "failedUpdate": "Failed to update channel",
-    "failedDelete": "Failed to delete channel"
+    "created": "チャンネル作成済み",
+    "createdDesc": "{{name}} が追加されました",
+    "updated": "チャンネル更新済み",
+    "deleted": "チャンネル削除済み",
+    "failedCreate": "チャンネル作成失敗",
+    "failedUpdate": "チャンネル更新失敗",
+    "failedDelete": "チャンネル削除失敗"
   },
   "zalo": {
-    "allowedUsers": "Allowed Users",
-    "loadContacts": "Load Contacts",
-    "loading": "Loading...",
-    "searchContacts": "Search contacts...",
-    "friends": "Friends",
-    "groups": "Groups",
-    "membersCount": "{{count}} members",
-    "noContacts": "No contacts found",
-    "noContactsMatch": "No contacts match \"{{search}}\"",
-    "addManualPlaceholder": "Add ID manually",
-    "add": "Add",
-    "zaloIdsHint": "Zalo user IDs or group IDs",
-    "completeQrLogin": "Complete QR login to load contacts",
-    "loginQr": "Login with QR — {{name}}",
-    "loginSuccessful": "Login successful! Channel starting...",
-    "generatingQr": "Generating QR code...",
-    "scanHint": "Scan with your Zalo app (expires in ~100s)",
-    "loginSuccessLoading": "Login successful! Loading contacts...",
-    "retry": "Retry",
-    "close": "Close",
-    "skip": "Skip"
+    "allowedUsers": "許可ユーザー",
+    "loadContacts": "連絡先を読み込み",
+    "loading": "読み込み中...",
+    "searchContacts": "連絡先を検索...",
+    "friends": "友達",
+    "groups": "グループ",
+    "membersCount": "{{count}} メンバー",
+    "noContacts": "連絡先が見つかりません",
+    "noContactsMatch": "\"{{search}}\" に一致する連絡先はありません",
+    "addManualPlaceholder": "IDを手動で追加",
+    "add": "追加",
+    "zaloIdsHint": "ZaloユーザーIDまたはグループID",
+    "completeQrLogin": "連絡先を読み込むにはQRログインを完了してください",
+    "loginQr": "QRでログイン — {{name}}",
+    "loginSuccessful": "ログイン成功！チャンネル開始...",
+    "generatingQr": "QRコードを生成中...",
+    "scanHint": "Zaloアプリでスキャン（約100秒で期限切れ）",
+    "loginSuccessLoading": "ログイン成功！連絡先を読み込み中...",
+    "retry": "再試行",
+    "close": "閉じる",
+    "skip": "スキップ"
   },
   "whatsapp": {
-    "loginSuccessLoading": "✅ WhatsApp connected! Loading channel...",
-    "waitingForQr": "Waiting for QR code...",
-    "scanHint": "Open WhatsApp → tap You → Linked Devices → Link a Device",
-    "initializing": "Initializing...",
-    "skip": "Skip",
-    "retry": "Retry",
-    "close": "Close",
-    "reauthTitle": "Link WhatsApp — {{name}}",
-    "reauthDescription": "Scan the QR code with WhatsApp to link your device.",
-    "alreadyLinked": "✅ Device already linked",
-    "alreadyLinkedDetail": "WhatsApp is connected. To link a different device, click Re-link — this will log out the current session.",
-    "relinkDevice": "Re-link Device",
-    "connectedSuccess": "✅ WhatsApp connected successfully!",
-    "tabQrCode": "QR Code"
+    "loginSuccessLoading": "✅ WhatsApp接続済み！チャンネルを読み込み中...",
+    "waitingForQr": "QRコードを待機中...",
+    "scanHint": "WhatsAppを開く → 『あなた』 → 『リンク済みデバイス』 → 『デバイスをリンク』",
+    "initializing": "初期化中...",
+    "skip": "スキップ",
+    "retry": "再試行",
+    "close": "閉じる",
+    "reauthTitle": "WhatsAppをリンク — {{name}}",
+    "reauthDescription": "WhatsAppでQRコードをスキャンしてデバイスをリンクしてください。",
+    "alreadyLinked": "✅ デバイスはすでにリンク済み",
+    "alreadyLinkedDetail": "WhatsAppは接続されています。別のデバイスをリンクするには、再リンクをクリックしてください — 現在のセッションはログアウトされます。",
+    "relinkDevice": "デバイスを再リンク",
+    "connectedSuccess": "✅ WhatsAppが正常に接続されました！",
+    "tabQrCode": "QRコード"
   }
 }

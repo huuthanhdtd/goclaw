@@ -1,66 +1,66 @@
 {
-  "title": "Runtime & Packages",
-  "description": "Manage runtimes and installed packages inside the active GoClaw runtime container",
+  "title": "ランタイム & パッケージ",
+  "description": "アクティブなGoClawランタイムコンテナ内のランタイムとインストール済みパッケージを管理します",
   "runtimes": {
-    "title": "Runtimes",
-    "scopeTitle": "Container-scoped runtime status",
-    "scopeDesc": "These checks run inside the active GoClaw runtime container. Host-installed runtimes, shell profile changes, and nvm-managed binaries are not used here.",
-    "minimalImageHint": "The published latest image is minimal, so missing Python or Node runtimes can be expected there. Use the python, node, or full image variant, rebuild with ENABLE_PYTHON=true / ENABLE_NODE=true / ENABLE_FULL_SKILLS=true, or install runtimes manually in this container.",
-    "available": "Available",
-    "missing": "Missing",
-    "missingInContainer": "Missing in container"
+    "title": "ランタイム",
+    "scopeTitle": "コンテナスコープのランタイム状態",
+    "scopeDesc": "これらのチェックはアクティブなGoClawランタイムコンテナ内で実行されます。ホストにインストールされたランタイム、シェルプロファイルの変更、nvm管理のバイナリは使用されません。",
+    "minimalImageHint": "公開されているlatestイメージは最小構成のため、PythonやNodeランタイムが存在しない場合があります。python、node、fullイメージを使用するか、ENABLE_PYTHON=true / ENABLE_NODE=true / ENABLE_FULL_SKILLS=trueで再ビルドするか、このコンテナ内で手動インストールしてください。",
+    "available": "利用可能",
+    "missing": "未検出",
+    "missingInContainer": "コンテナ内に存在しません"
   },
   "system": {
-    "title": "System Packages",
-    "placeholder": "Package name (e.g. github-cli)"
+    "title": "システムパッケージ",
+    "placeholder": "パッケージ名（例: github-cli）"
   },
   "pip": {
-    "title": "Python Packages",
-    "placeholder": "Package name (e.g. pandas)"
+    "title": "Pythonパッケージ",
+    "placeholder": "パッケージ名（例: pandas）"
   },
   "npm": {
-    "title": "Node Packages",
-    "placeholder": "Package name (e.g. typescript)"
+    "title": "Nodeパッケージ",
+    "placeholder": "パッケージ名（例: typescript）"
   },
   "github": {
-    "title": "GitHub Binaries",
-    "placeholder": "owner/repo[@tag] (e.g. cli/cli@v2.45.0)",
-    "browse": "Browse releases",
-    "muslWarning": "Alpine Linux uses musl libc. Binaries compiled against glibc may fail at runtime. Prefer static or musl-compatible releases.",
-    "muslDismiss": "Dismiss",
-    "pickerTitle": "Select release from {{repo}}",
-    "pickerEmpty": "No releases found for {{repo}}",
-    "pickerLoading": "Loading releases...",
-    "pickerMatchingAssets": "{{count}} matching / {{total}} total",
-    "pickerPrerelease": "Pre-release",
-    "pickerSelect": "Select",
+    "title": "GitHubバイナリ",
+    "placeholder": "owner/repo[@tag]（例: cli/cli@v2.45.0）",
+    "browse": "リリースを参照",
+    "muslWarning": "Alpine Linuxはmusl libcを使用しています。glibc向けにビルドされたバイナリは実行時に失敗する可能性があります。静的リンクまたはmusl対応のリリースを推奨します。",
+    "muslDismiss": "閉じる",
+    "pickerTitle": "{{repo}} のリリースを選択",
+    "pickerEmpty": "{{repo}} のリリースが見つかりません",
+    "pickerLoading": "リリースを読み込み中...",
+    "pickerMatchingAssets": "{{count}}件一致 / {{total}}件中",
+    "pickerPrerelease": "プレリリース",
+    "pickerSelect": "選択",
     "columns": {
-      "repo": "Repository",
-      "tag": "Version",
-      "binaries": "Binaries",
-      "installedAt": "Installed"
+      "repo": "リポジトリ",
+      "tag": "バージョン",
+      "binaries": "バイナリ",
+      "installedAt": "インストール日時"
     }
   },
   "actions": {
-    "install": "Install",
-    "uninstall": "Uninstall",
-    "installing": "Installing...",
-    "uninstalling": "Removing..."
+    "install": "インストール",
+    "uninstall": "アンインストール",
+    "installing": "インストール中...",
+    "uninstalling": "削除中..."
   },
   "messages": {
-    "installSuccess": "{{name}} installed successfully",
-    "installError": "Failed to install {{name}}",
-    "uninstallSuccess": "{{name}} removed successfully",
-    "uninstallError": "Failed to remove {{name}}"
+    "installSuccess": "{{name}} のインストールに成功しました",
+    "installError": "{{name}} のインストールに失敗しました",
+    "uninstallSuccess": "{{name}} を削除しました",
+    "uninstallError": "{{name}} の削除に失敗しました"
   },
   "confirmUninstall": {
-    "title": "Confirm Uninstall",
-    "description": "Are you sure you want to remove {{name}}? This action cannot be undone."
+    "title": "アンインストールの確認",
+    "description": "{{name}} を削除してもよろしいですか？この操作は取り消せません。"
   },
   "table": {
-    "name": "Name",
-    "version": "Version",
-    "actions": "Actions",
-    "empty": "No packages installed"
+    "name": "名前",
+    "version": "バージョン",
+    "actions": "操作",
+    "empty": "インストール済みパッケージはありません"
   }
 }
