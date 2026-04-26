@@ -83,55 +83,55 @@ import viV3Capabilities from "./locales/vi/v3-capabilities.json";
 import viBackup from "./locales/vi/backup.json";
 import viHooks from "./locales/vi/hooks.json";
 
-// --- ZH namespaces ---
-import zhCommon from "./locales/zh/common.json";
-import zhSidebar from "./locales/zh/sidebar.json";
-import zhTopbar from "./locales/zh/topbar.json";
-import zhLogin from "./locales/zh/login.json";
-import zhOverview from "./locales/zh/overview.json";
-import zhChat from "./locales/zh/chat.json";
-import zhAgents from "./locales/zh/agents.json";
-import zhTeams from "./locales/zh/teams.json";
-import zhSessions from "./locales/zh/sessions.json";
-import zhSkills from "./locales/zh/skills.json";
-import zhCron from "./locales/zh/cron.json";
-import zhConfig from "./locales/zh/config.json";
-import zhChannels from "./locales/zh/channels.json";
-import zhProviders from "./locales/zh/providers.json";
-import zhTraces from "./locales/zh/traces.json";
-import zhEvents from "./locales/zh/events.json";
-import zhUsage from "./locales/zh/usage.json";
-import zhApprovals from "./locales/zh/approvals.json";
-import zhNodes from "./locales/zh/nodes.json";
-import zhLogs from "./locales/zh/logs.json";
-import zhTools from "./locales/zh/tools.json";
-import zhMcp from "./locales/zh/mcp.json";
-import zhTts from "./locales/zh/tts.json";
-import zhSetup from "./locales/zh/setup.json";
-import zhMemory from "./locales/zh/memory.json";
-import zhVault from "./locales/zh/vault.json";
-import zhStorage from "./locales/zh/storage.json";
-import zhPendingMessages from "./locales/zh/pending-messages.json";
-import zhContacts from "./locales/zh/contacts.json";
-import zhActivity from "./locales/zh/activity.json";
-import zhApiKeys from "./locales/zh/api-keys.json";
-import zhCliCredentials from "./locales/zh/cli-credentials.json";
-import zhPackages from "./locales/zh/packages.json";
-import zhTenants from "./locales/zh/tenants.json";
-import zhSystemSettings from "./locales/zh/system-settings.json";
-import zhImportExport from "./locales/zh/import-export.json";
-import zhV3Capabilities from "./locales/zh/v3-capabilities.json";
-import zhBackup from "./locales/zh/backup.json";
-import zhHooks from "./locales/zh/hooks.json";
+// --- JA namespaces ---
+import jaCommon from "./locales/ja/common.json";
+import jaSidebar from "./locales/ja/sidebar.json";
+import jaTopbar from "./locales/ja/topbar.json";
+import jaLogin from "./locales/ja/login.json";
+import jaOverview from "./locales/ja/overview.json";
+import jaChat from "./locales/ja/chat.json";
+import jaAgents from "./locales/ja/agents.json";
+import jaTeams from "./locales/ja/teams.json";
+import jaSessions from "./locales/ja/sessions.json";
+import jaSkills from "./locales/ja/skills.json";
+import jaCron from "./locales/ja/cron.json";
+import jaConfig from "./locales/ja/config.json";
+import jaChannels from "./locales/ja/channels.json";
+import jaProviders from "./locales/ja/providers.json";
+import jaTraces from "./locales/ja/traces.json";
+import jaEvents from "./locales/ja/events.json";
+import jaUsage from "./locales/ja/usage.json";
+import jaApprovals from "./locales/ja/approvals.json";
+import jaNodes from "./locales/ja/nodes.json";
+import jaLogs from "./locales/ja/logs.json";
+import jaTools from "./locales/ja/tools.json";
+import jaMcp from "./locales/ja/mcp.json";
+import jaTts from "./locales/ja/tts.json";
+import jaSetup from "./locales/ja/setup.json";
+import jaMemory from "./locales/ja/memory.json";
+import jaVault from "./locales/ja/vault.json";
+import jaStorage from "./locales/ja/storage.json";
+import jaPendingMessages from "./locales/ja/pending-messages.json";
+import jaContacts from "./locales/ja/contacts.json";
+import jaActivity from "./locales/ja/activity.json";
+import jaApiKeys from "./locales/ja/api-keys.json";
+import jaCliCredentials from "./locales/ja/cli-credentials.json";
+import jaPackages from "./locales/ja/packages.json";
+import jaTenants from "./locales/ja/tenants.json";
+import jaSystemSettings from "./locales/ja/system-settings.json";
+import jaImportExport from "./locales/ja/import-export.json";
+import jaV3Capabilities from "./locales/ja/v3-capabilities.json";
+import jaBackup from "./locales/ja/backup.json";
+import jaHooks from "./locales/ja/hooks.json";
 
 const STORAGE_KEY = "goclaw:language";
 
 function getInitialLanguage(): string {
   const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored === "en" || stored === "vi" || stored === "zh") return stored;
+  if (stored === "en" || stored === "vi" || stored === "ja") return stored;
   const lang = navigator.language.toLowerCase();
   if (lang.startsWith("vi")) return "vi";
-  if (lang.startsWith("zh")) return "zh";
+  if (lang.startsWith("ja")) return "ja";
   return "en";
 }
 
@@ -187,24 +187,24 @@ i18n.use(initReactI18next).init({
       backup: viBackup,
       hooks: viHooks,
     },
-    zh: {
-      common: zhCommon, sidebar: zhSidebar, topbar: zhTopbar, login: zhLogin,
-      overview: zhOverview, chat: zhChat, agents: zhAgents, teams: zhTeams,
-      sessions: zhSessions, skills: zhSkills, cron: zhCron, config: zhConfig,
-      channels: zhChannels, providers: zhProviders, traces: zhTraces,
-      events: zhEvents, usage: zhUsage,
-      approvals: zhApprovals, nodes: zhNodes, logs: zhLogs, tools: zhTools,
-      mcp: zhMcp, tts: zhTts, setup: zhSetup, memory: zhMemory, vault: zhVault, storage: zhStorage,
-      "pending-messages": zhPendingMessages,
-      contacts: zhContacts, activity: zhActivity, "api-keys": zhApiKeys,
-      "cli-credentials": zhCliCredentials,
-      packages: zhPackages,
-      tenants: zhTenants,
-      "system-settings": zhSystemSettings,
-      "import-export": zhImportExport,
-      "v3-capabilities": zhV3Capabilities,
-      backup: zhBackup,
-      hooks: zhHooks,
+    ja: {
+      common: jaCommon, sidebar: jaSidebar, topbar: jaTopbar, login: jaLogin,
+      overview: jaOverview, chat: jaChat, agents: jaAgents, teams: jaTeams,
+      sessions: jaSessions, skills: jaSkills, cron: jaCron, config: jaConfig,
+      channels: jaChannels, providers: jaProviders, traces: jaTraces,
+      events: jaEvents, usage: jaUsage,
+      approvals: jaApprovals, nodes: jaNodes, logs: jaLogs, tools: jaTools,
+      mcp: jaMcp, tts: jaTts, setup: jaSetup, memory: jaMemory, vault: jaVault, storage: jaStorage,
+      "pending-messages": jaPendingMessages,
+      contacts: jaContacts, activity: jaActivity, "api-keys": jaApiKeys,
+      "cli-credentials": jaCliCredentials,
+      packages: jaPackages,
+      tenants: jaTenants,
+      "system-settings": jaSystemSettings,
+      "import-export": jaImportExport,
+      "v3-capabilities": jaV3Capabilities,
+      backup: jaBackup,
+      hooks: jaHooks,
     },
   },
   ns: [...ns],

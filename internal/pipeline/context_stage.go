@@ -188,7 +188,7 @@ func (s *ContextStage) Execute(ctx context.Context, state *RunState) error {
 // earlier messages being pruned. Returns "" when there's no usable context.
 //
 // Budget: up to 2 user turns, max ~300 runes total. Rune (not byte) cap keeps
-// vi/zh locales safe — a byte-wise clip would slice multi-byte characters
+// vi/ja locales safe — a byte-wise clip would slice multi-byte characters
 // and emit invalid UTF-8 to the embedding model. Tuning knob is intentional
 // here rather than config-driven — Phase 9 adds it only if operational data
 // shows variance across agent types.

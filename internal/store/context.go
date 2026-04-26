@@ -23,7 +23,7 @@ const (
 	SenderIDKey contextKey = "goclaw_sender_id"
 	// SelfEvolveKey indicates whether a predefined agent can update its SOUL.md.
 	SelfEvolveKey contextKey = "goclaw_self_evolve"
-	// LocaleKey is the context key for the user's preferred locale (e.g. "en", "vi", "zh").
+	// LocaleKey is the context key for the user's preferred locale (e.g. "en", "vi", "ja").
 	LocaleKey contextKey = "goclaw_locale"
 	// SharedMemoryKey indicates memory should be shared (no per-user scoping).
 	SharedMemoryKey contextKey = "goclaw_shared_memory"

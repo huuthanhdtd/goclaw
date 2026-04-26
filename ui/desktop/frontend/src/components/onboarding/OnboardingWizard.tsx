@@ -11,7 +11,7 @@ import type { ProviderData } from '../../types/provider'
 const LANGUAGES = [
   { value: 'en', label: 'EN' },
   { value: 'vi', label: 'VI' },
-  { value: 'zh', label: '中文' },
+  { value: 'ja', label: 'JP' },
 ] as const
 
 interface OnboardingWizardProps {

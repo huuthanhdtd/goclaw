@@ -128,7 +128,7 @@ func (r *MethodRouter) handleConnect(ctx context.Context, client *Client, req *p
 		Token       string `json:"token"`
 		UserID      string `json:"user_id"`
 		SenderID    string `json:"sender_id"`    // browser pairing: stored sender ID for reconnect
-		Locale      string `json:"locale"`       // user's preferred locale (en, vi, zh)
+		Locale      string `json:"locale"`       // user's preferred locale (en, vi, jp)
 		TenantHint  string `json:"tenant_hint"`  // optional tenant slug for browser pairing multi-tenant
 		TenantID    string `json:"tenant_id"`    // cross-tenant admin: narrow scope to specific tenant (UUID or slug)
 		TenantScope string `json:"tenant_scope"` // deprecated: alias for tenant_id (backward compat)

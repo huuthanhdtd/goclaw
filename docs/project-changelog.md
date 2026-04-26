@@ -22,7 +22,7 @@ Implementation is evidence-backed against the native ChatGPT Responses API event
 
 **i18n**
 
-- 1 UI key (`imageGenDownloadName`) in `ui/web/src/i18n/locales/{en,vi,zh}/chat.json` — download filename for generated images.
+- 1 UI key (`imageGenDownloadName`) in `ui/web/src/i18n/locales/{en,vi,ja}/chat.json` — download filename for generated images.
 
 **Tests**
 

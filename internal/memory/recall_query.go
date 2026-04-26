@@ -10,7 +10,7 @@ import "strings"
 // either way). Tuning knob; change only if recall quality metrics show a
 // clear trend in either direction.
 //
-// Unit is runes, not bytes, because GoClaw supports vi/zh locales: a
+// Unit is runes, not bytes, because GoClaw supports vi/ja locales: a
 // byte-wise tail-clip would slice a multi-byte rune in half and emit invalid
 // UTF-8 to the embedding model.
 const maxRecallContextRunes = 400
@@ -21,7 +21,7 @@ const maxRecallContextRunes = 400
 // ambiguous (pronouns, implicit references, one-word replies).
 //
 // The recent context is truncated to maxRecallContextRunes (rune-safe for
-// CJK/vi/zh input) and prepended so embedding models give the latest message
+// CJK/vi/ja input) and prepended so embedding models give the latest message
 // the most weight (position bias). Empty context or empty message return the
 // unmodified input — zero-risk fallback for legacy callers that don't supply
 // RecentContext yet.

@@ -27,7 +27,7 @@ type Client struct {
 	connectedAt time.Time // when the client connected
 	remoteAddr  string    // peer IP (extracted from proxy headers or RemoteAddr)
 
-	locale string              // user's preferred locale (e.g. "en", "vi", "zh")
+	locale string              // user's preferred locale (e.g. "en", "vi", "jp")
 	scopes []permissions.Scope // API key scopes (empty = role-based auth, no scope restriction)
 
 	// Browser pairing state

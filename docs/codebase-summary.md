@@ -18,7 +18,7 @@ For system design see `docs/00-architecture-overview.md`; for API contract see `
 | `internal/crypto/` | AES-256-GCM encryption for API keys |
 | `internal/gateway/` | WS + HTTP server, client, method router |
 | `internal/http/` | HTTP API handlers (`/v1/*`) |
-| `internal/i18n/` | Backend message catalog (EN/VI/ZH) + `T(locale, key, args)` |
+| `internal/i18n/` | Backend message catalog (EN/VI/JA) + `T(locale, key, args)` |
 | `internal/memory/` | pgvector 3-tier memory system |
 | `internal/mcp/` | Model Context Protocol bridge |
 | `internal/permissions/` | RBAC: admin / operator / viewer |
@@ -112,8 +112,8 @@ Backend validation errors use `i18n.T(locale, key, args...)` pattern.
 Locale is extracted from `Accept-Language` HTTP header by `enrichContext` middleware.
 
 UI param labels/help text live in:
-- `ui/web/src/i18n/locales/{en,vi,zh}/tts.json`
-- `ui/desktop/frontend/src/i18n/locales/{en,vi,zh}/tts.json`
+- `ui/web/src/i18n/locales/{en,vi,ja}/tts.json`
+- `ui/desktop/frontend/src/i18n/locales/{en,vi,ja}/tts.json`
 
 Parity enforced by `ui/web/src/__tests__/i18n-tts-key-parity.test.ts` (vitest).
 

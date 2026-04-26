@@ -165,7 +165,7 @@ Small models often don't recognize their output was truncated. This hint helps t
 | 70% iteration budget | Suggests creating a skill to reuse the workflow |
 | 90% iteration budget | Stronger reminder about skill creation |
 
-Characteristics: **i18n** (en/vi/zh), **ephemeral** (only exists in current run, not persisted to session).
+Characteristics: **i18n** (en/vi/ja), **ephemeral** (only exists in current run, not persisted to session).
 
 #### D. Team Task Progress Nudges — Progress Reporting Reminders
 

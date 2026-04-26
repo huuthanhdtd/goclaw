@@ -480,8 +480,8 @@ func TestSynthesize_GeminiInvalidVoice_I18n(t *testing.T) {
 			wantBody: i18n.T("vi", i18n.MsgTtsGeminiInvalidVoice, "bad-voice"),
 		},
 		{
-			locale:   "zh",
-			wantBody: i18n.T("zh", i18n.MsgTtsGeminiInvalidVoice, "bad-voice"),
+			locale:   "ja",
+			wantBody: i18n.T("ja", i18n.MsgTtsGeminiInvalidVoice, "bad-voice"),
 		},
 	} {
 		t.Run("locale="+tc.locale, func(t *testing.T) {

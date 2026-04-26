@@ -4,7 +4,7 @@ import { useUiStore } from '../../stores/ui-store'
 const LANGUAGES = [
   { value: 'en', label: 'English' },
   { value: 'vi', label: 'Tiếng Việt' },
-  { value: 'zh', label: '中文' },
+  { value: 'ja', label: '日本語' },
 ] as const
 
 export function AppearanceTab() {

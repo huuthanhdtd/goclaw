@@ -2,11 +2,11 @@
  * i18n TTS key parity tests.
  *
  * Ensures every leaf key present in the English (EN) tts.json exists in the
- * Vietnamese (VI) and Simplified Chinese (ZH) translations. Prevents silent
+ * Vietnamese (VI) and Simplified Chinese (JA) translations. Prevents silent
  * fallback to English in production caused by missing keys.
  *
  * Also covers desktop locale files — they have a distinct keyset from web but
- * must themselves be internally consistent across EN/VI/ZH.
+ * must themselves be internally consistent across EN/VI/JA.
  */
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "fs";
@@ -92,14 +92,14 @@ const DESKTOP_LOCALES = "../../../desktop/frontend/src/i18n/locales";
 describe("Web TTS i18n parity", () => {
   const webEN = loadLocale(`${WEB_LOCALES}/en/tts.json`);
   const webVI = loadLocale(`${WEB_LOCALES}/vi/tts.json`);
-  const webZH = loadLocale(`${WEB_LOCALES}/zh/tts.json`);
+  const webJA = loadLocale(`${WEB_LOCALES}/ja/tts.json`);
 
   it("VI contains every key present in EN", () => {
     assertKeyParity(webEN, webVI, "web vi/tts.json");
   });
 
-  it("ZH contains every key present in EN", () => {
-    assertKeyParity(webEN, webZH, "web zh/tts.json");
+  it("JA contains every key present in EN", () => {
+    assertKeyParity(webEN, webJA, "web ja/tts.json");
   });
 });
 
@@ -110,13 +110,13 @@ describe("Web TTS i18n parity", () => {
 describe("Desktop TTS i18n parity", () => {
   const desktopEN = loadLocale(`${DESKTOP_LOCALES}/en/tts.json`);
   const desktopVI = loadLocale(`${DESKTOP_LOCALES}/vi/tts.json`);
-  const desktopZH = loadLocale(`${DESKTOP_LOCALES}/zh/tts.json`);
+  const desktopJA = loadLocale(`${DESKTOP_LOCALES}/ja/tts.json`);
 
   it("VI contains every key present in EN", () => {
     assertKeyParity(desktopEN, desktopVI, "desktop vi/tts.json");
   });
 
-  it("ZH contains every key present in EN", () => {
-    assertKeyParity(desktopEN, desktopZH, "desktop zh/tts.json");
+  it("JA contains every key present in EN", () => {
+    assertKeyParity(desktopEN, desktopJA, "desktop ja/tts.json");
   });
 });

@@ -152,7 +152,7 @@ On successful API key authentication, `last_used_at` is updated asynchronously (
 - **User ID**: `X-GoClaw-User-Id: <user-id>` — optional external user identifier (max 255 chars)
 - **Browser pairing**: `X-GoClaw-Sender-Id: <sender-id>` — identifies a previously-paired browser device
 - **Tenant scope**: `X-GoClaw-Tenant-Id: <tenant-uuid-or-slug>` — owner/system-key scope narrowing; non-owner gateway token and browser-pairing callers must already belong to the requested tenant
-- **Locale**: `Accept-Language` — user's preferred language (en, vi, zh; default: en)
+- **Locale**: `Accept-Language` — user's preferred language (en, vi, ja; default: en)
 
 ### Tenant Scope Rules
 

@@ -27,7 +27,7 @@
 - [ ] Web UI builds: `cd ui/web && pnpm build` (if UI changes)
 - [ ] No hardcoded secrets or credentials
 - [ ] SQL queries use parameterized `$1, $2` (no string concat)
-- [ ] New user-facing strings added to all 3 locales (en/vi/zh)
+- [ ] New user-facing strings added to all 3 locales (en/vi/ja)
 - [ ] Migration version bumped in `internal/upgrade/version.go` (if new migration)
 
 ## Test Plan

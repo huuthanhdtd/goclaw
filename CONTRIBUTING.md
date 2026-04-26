@@ -51,7 +51,7 @@ Based on our automated review checklist:
 - **Security**: Parameterized SQL, no hardcoded secrets, input validation
 - **Breaking changes**: API contracts, DB migrations, config format
 - **Tenant isolation**: All queries scoped by `tenant_id`. **Admin writes require the correct scope guard** — see section below
-- **i18n**: User-facing strings in all 3 locales (en/vi/zh)
+- **i18n**: User-facing strings in all 3 locales (en/vi/ja)
 - **SQLite parity**: Changes compile with `-tags sqliteonly`
 - **Mobile UI**: `h-dvh` not `h-screen`, 16px input fonts, safe areas
 

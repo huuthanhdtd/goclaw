@@ -176,7 +176,7 @@ All HTTP endpoints accept standard headers:
 | `X-GoClaw-User-Id` | Yes | Your app's user ID (max 255 chars). Scopes sessions and per-user data |
 | `X-GoClaw-Tenant-Id` | No | Tenant UUID or slug. Only needed for system-level keys |
 | `X-GoClaw-Agent-Id` | No | Target agent ID (alternative to `model` field) |
-| `Accept-Language` | No | Locale for error messages: `en`, `vi`, `zh` |
+| `Accept-Language` | No | Locale for error messages: `en`, `vi`, `ja` |
 
 ### Chat (OpenAI-Compatible)
 

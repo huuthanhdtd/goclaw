@@ -100,9 +100,9 @@ describe("sttForm i18n key contract", () => {
     expect(form?.whatsappPrivacyWarning).toBeTruthy();
   });
 
-  it("zh locale has whatsappPrivacyWarning", async () => {
-    const zh = await import("@/i18n/locales/zh/tools.json");
-    const form = (zh as unknown as Record<string, Record<string, Record<string, string>>>)
+  it("ja locale has whatsappPrivacyWarning", async () => {
+    const ja = await import("@/i18n/locales/ja/tools.json");
+    const form = (ja as unknown as Record<string, Record<string, Record<string, string>>>)
       .builtin?.sttForm;
     expect(form?.whatsappPrivacyWarning).toBeTruthy();
   });
@@ -110,8 +110,8 @@ describe("sttForm i18n key contract", () => {
   it("providersRequiredError key exists in all locales", async () => {
     const en = await import("@/i18n/locales/en/tools.json");
     const vi = await import("@/i18n/locales/vi/tools.json");
-    const zh = await import("@/i18n/locales/zh/tools.json");
-    for (const locale of [en, vi, zh]) {
+    const ja = await import("@/i18n/locales/ja/tools.json");
+    for (const locale of [en, vi, ja]) {
       const form = (locale as unknown as Record<string, Record<string, Record<string, string>>>)
         .builtin?.sttForm;
       expect(form?.providersRequiredError).toBeTruthy();

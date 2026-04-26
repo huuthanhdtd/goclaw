@@ -293,7 +293,7 @@ For each `ParamSchema`, add:
 1. `tts.<name>.<param_key>.label` and `tts.<name>.<param_key>.help` to all
    6 locale JSON files (web × 3 + desktop × 3).
 2. Any backend validation error keys to `internal/i18n/keys.go` and all three
-   catalog files (`catalog_en.go`, `catalog_vi.go`, `catalog_zh.go`).
+   catalog files (`catalog_en.go`, `catalog_vi.go`, `catalog_ja.go`).
 
 ### Step 9 — Tests
 

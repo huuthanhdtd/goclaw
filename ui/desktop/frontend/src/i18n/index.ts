@@ -37,32 +37,32 @@ import viTeams from './locales/vi/teams.json'
 import viChannels from './locales/vi/channels.json'
 import viTts from './locales/vi/tts.json'
 
-// --- ZH namespaces ---
-import zhCommon from './locales/zh/common.json'
-import zhChat from './locales/zh/chat.json'
-import zhAgents from './locales/zh/agents.json'
-import zhProviders from './locales/zh/providers.json'
-import zhSkills from './locales/zh/skills.json'
-import zhCron from './locales/zh/cron.json'
-import zhMcp from './locales/zh/mcp.json'
-import zhTools from './locales/zh/tools.json'
-import zhTraces from './locales/zh/traces.json'
-import zhMemory from './locales/zh/memory.json'
-import zhStorage from './locales/zh/storage.json'
-import zhSessions from './locales/zh/sessions.json'
-import zhDesktop from './locales/zh/desktop.json'
-import zhTeams from './locales/zh/teams.json'
-import zhChannels from './locales/zh/channels.json'
-import zhTts from './locales/zh/tts.json'
+// --- JA namespaces ---
+import jaCommon from './locales/ja/common.json'
+import jaChat from './locales/ja/chat.json'
+import jaAgents from './locales/ja/agents.json'
+import jaProviders from './locales/ja/providers.json'
+import jaSkills from './locales/ja/skills.json'
+import jaCron from './locales/ja/cron.json'
+import jaMcp from './locales/ja/mcp.json'
+import jaTools from './locales/ja/tools.json'
+import jaTraces from './locales/ja/traces.json'
+import jaMemory from './locales/ja/memory.json'
+import jaStorage from './locales/ja/storage.json'
+import jaSessions from './locales/ja/sessions.json'
+import jaDesktop from './locales/ja/desktop.json'
+import jaTeams from './locales/ja/teams.json'
+import jaChannels from './locales/ja/channels.json'
+import jaTts from './locales/ja/tts.json'
 
 const STORAGE_KEY = 'goclaw:language'
 
 function getInitialLanguage(): string {
   const stored = localStorage.getItem(STORAGE_KEY)
-  if (stored === 'en' || stored === 'vi' || stored === 'zh') return stored
+  if (stored === 'en' || stored === 'vi' || stored === 'ja') return stored
   const lang = navigator.language.toLowerCase()
   if (lang.startsWith('vi')) return 'vi'
-  if (lang.startsWith('zh')) return 'zh'
+  if (lang.startsWith('ja')) return 'ja'
   return 'vi'
 }
 
@@ -80,11 +80,11 @@ i18n.use(initReactI18next).init({
       traces: viTraces, memory: viMemory, storage: viStorage, sessions: viSessions,
       desktop: viDesktop, teams: viTeams, channels: viChannels, tts: viTts,
     },
-    zh: {
-      common: zhCommon, chat: zhChat, agents: zhAgents, providers: zhProviders,
-      skills: zhSkills, cron: zhCron, mcp: zhMcp, tools: zhTools,
-      traces: zhTraces, memory: zhMemory, storage: zhStorage, sessions: zhSessions,
-      desktop: zhDesktop, teams: zhTeams, channels: zhChannels, tts: zhTts,
+    ja: {
+      common: jaCommon, chat: jaChat, agents: jaAgents, providers: jaProviders,
+      skills: jaSkills, cron: jaCron, mcp: jaMcp, tools: jaTools,
+      traces: jaTraces, memory: jaMemory, storage: jaStorage, sessions: jaSessions,
+      desktop: jaDesktop, teams: jaTeams, channels: jaChannels, tts: jaTts,
     },
   },
   ns: ['common', 'chat', 'agents', 'providers', 'skills', 'cron', 'mcp', 'tools', 'traces', 'memory', 'storage', 'sessions', 'desktop', 'teams', 'channels', 'tts'],
